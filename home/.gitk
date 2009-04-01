@@ -19,7 +19,7 @@ set diffcolors {red "#00a000" blue}
 set diffcontext 3
 set selectbgcolor gray85
 set extdifftool meld
-set geometry(main) 1152x684+88+88
+set geometry(main) 1152x684+120+132
 set geometry(topwidth) 1148
 set geometry(topheight) 225
 set geometry(pwsash0) "440 2"
