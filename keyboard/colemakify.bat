@@ -1,0 +1,1 @@
+C:\gabe\settings\AutoHotKey\AutoHotkey.exe "C:\gabe\settings\AutoHotKey\QWERTY to Colemak.ahk"

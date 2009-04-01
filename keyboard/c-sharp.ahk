@@ -1,0 +1,8 @@
+#Hotstring EndChars `t
+
+::cc::
+(
+//
+//
+//
+)

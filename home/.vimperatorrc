@@ -1,0 +1,99 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vimperator key mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+ 
+" Use the nicer address bar  
+noremap o <A-d>  
+noremap t <C-t>
+
+" Options
+set guioptions+=Tb
+
+" Restore normal window title  
+set titlestring=Mozilla Firefox  
+
+set novisualbell
+set newtab=all
+set editor=gvim.exe -f
+
+"shortcut to view source in its own window
+noremap v :tab viewsource<CR>
+
+" easier next/prev tab
+noremap [ gT
+noremap ] gt
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colemak Bindings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" j - left
+" l - right
+" h - up
+" k - down
+"
+noremap h k
+noremap j h
+noremap k j
+
+" Colemak ':' is slightly harder to hit than qwerty ':'. Make it easier by
+" swapping ':' and ';'
+noremap : ;
+noremap ; :
+
+" Remap Next/Prev buttons
+noremap J [[
+noremap L ]]
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Windows bindings (C-z, C-x, C-c, C-v)
+" TODO: Try to use the alternate Cut/Copy/Paste (C-Del, C-Ins, S-Ins
+"       so that we change less
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" mswin.vimp - mappings to make copy/paste in Vimperator behave like Windows
+" Maintainer: Doug Kearns <dougkearns@gmail.com>
+" Last Change: 31 Oct 2008
+
+"noremap <C-q> <C-v>
+"noremap <C-Q> <C-z>
+" TODO: this should probably be <C-Break> - see :help dos-CTRL-break in Vim
+"noremap <C-s> <C-c>
+"
+"inoremap <C-q> <C-v>
+"inoremap <C-Q> <C-z>
+"inoremap <C-s> <C-c>
+"
+"noremap <C-c> <C-v><C-c>
+"noremap <C-v> <C-v><C-v>
+"noremap <C-x> <C-v><C-x>
+"noremap <C-z> <C-v><C-z>
+"noremap <C-y> <C-v><C-y>
+"
+"cnoremap <C-c> <C-v><C-c>
+"cnoremap <C-v> <C-v><C-v>
+"cnoremap <S-Insert> <C-v><C-v>
+"cnoremap <C-x> <C-v><C-x>
+"cnoremap <C-z> <C-v><C-z>
+"cnoremap <C-y> <C-v><C-y>
+"
+"inoremap <C-c> <C-v><C-c>
+"inoremap <C-v> <C-v><C-v>
+"inoremap <S-Insert> <C-v><C-v>
+"inoremap <C-x> <C-v><C-x>
+"inoremap <C-z> <C-v><C-z>
+"inoremap <C-y> <C-v><C-y>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vimperator Scripts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"js <<EOF
+"  commands.add(['toolbarToggle'],
+"    'Toggles the menubar and toolbar on/off',
+"    function(args) {
+"      //set guioptions?
+"      var raw_opt = liberator.set('guioptions');
+"      var opt = raw_opt.substring( raw_opt.indexOf('=')+1 );
+"    },
+"    { argCount: "0" });
+"
+"EOF

@@ -1,0 +1,20 @@
+[user]
+	name = Gabe Moothart
+	email = gmoothart@gmail.com
+[core]
+	excludesfile = /Users/gabe/.gitignore
+	autocrlf = false
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[branch]
+	autosetupmerge = true
+[github]
+	user = gmoothart

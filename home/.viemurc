@@ -1,0 +1,37 @@
+
+" Add blank space above/below with <CR>, <S-CR> 
+nnoremap <CR> o<Esc>
+nnoremap <S-CR> O<Esc>
+
+" use tab to indent
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+vnoremap <Tab> >
+vnoremap <S-Tab> <
+
+nnoremap <space> <C-f>
+nnoremap <S-space> <C-b>
+
+" have Y behave analogously to D and C rather than to dd and cc (which is
+" already done by yy):
+noremap Y y$
+
+" Function-key remappings
+nnoremap <F4> :bd<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colemak Bindings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" j - left
+" l - right
+" h - up
+" k - down
+"
+noremap h k
+noremap j h
+noremap k j
+
+" Colemak ':' is slightly harder to hit than qwerty ':'. Make it easier by
+" swapping ':' and ';'
+noremap : ;
+noremap ; :

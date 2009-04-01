@@ -1,0 +1,3 @@
+to do in free time:
+* can I run eclipse for X under cygwin? That would be awesomcross!
+* add svn-update to Start folder, and commit to shutdown? If there is no event for that, roll it together in a slickrun word
