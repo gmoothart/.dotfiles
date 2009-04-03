@@ -7,14 +7,15 @@ noremap o <A-d>
 noremap t <C-t>
 
 " Options
-set guioptions+=Tb
+set guioptions+=TBn
 
 " Restore normal window title  
-set titlestring=Mozilla Firefox  
+set titlestring="Mozilla Firefox"
 
-set novisualbell
+set visualbell
 set newtab=all
 set editor=gvim.exe -f
+set wildoptions auto
 
 "shortcut to view source in its own window
 noremap v :tab viewsource<CR>
