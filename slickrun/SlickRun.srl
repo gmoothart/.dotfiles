@@ -479,7 +479,7 @@ GUID={7D8ECDA8-4146-4F84-9162-3834998576A5}
 StartMode=5
 UseRunAs=0
 [notepad]
-Filename="c:\gabe\settings\SciTE\SciTE.exe"
+Filename="C:\Program Files\Scintilla Text Editor\SciTE.exe"
 Path=""
 Params=""
 Notes=""
