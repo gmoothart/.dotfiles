@@ -137,7 +137,6 @@ autoruns
 fi
 keyboard
 grep
-virtualpc
 mspaint
 remotedesktop
 svnhelp
@@ -161,7 +160,6 @@ bubbs
 thunderbird
 vault
 gvim
-backpack
 task 491
 task 438
 task 338
@@ -176,7 +174,6 @@ diffmerge
 diff
 sci
 _DEFAULT sci
-internetexplorer
 calc
 task 430
 gallio
@@ -189,7 +186,6 @@ devepost
 vlm
 _DEFAULT vlm
 task 677
-cmd
 STandby
 task 382
 jsonviewer
@@ -199,29 +195,40 @@ c# as
 _DEFAULT c# as
 restartwww
 eventlog
-vs2008
-sourcesafe
 MailMessage.To
 _DEFAULT MailMessage.To
 reflector
-outlook
 GetOrdinal
 _DEFAULT GetOrdinal
 snippetcompiler
-notepad
 task 741
-calendar
-mailto:
-terminals
 services
 snippets
 excel
-vim
-meebo
-chrome
-sqlserver
-firefox
 addremoveprograms
 regedit
-c;ukmanleo
+bash
+BeginExecuteNonQuery
+_DEFAULT BeginExecuteNonQuery
+calendar
 xplorer2
+chrome
+notepad
+hosts
+vs2008
+sourcesafe
+c;ukmanleo
+vim
+meebo
+firefox
+backpack
+cmd
+task 735
+sqlserver
+mailto:
+internetexplorer
+virtualpc
+terminals
+httprequest
+_DEFAULT httprequest
+outlook
