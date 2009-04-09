@@ -137,11 +137,11 @@ autoruns
 fi
 keyboard
 grep
+virtualpc
 mspaint
 remotedesktop
 svnhelp
 dbisamsa3
-iis
 msdn BeginTransaction
 opera
 ftp
@@ -160,6 +160,7 @@ bubbs
 thunderbird
 vault
 gvim
+backpack
 task 491
 task 438
 task 338
@@ -183,8 +184,6 @@ _DEFAULT n0
 task 195
 filemon
 devepost
-vlm
-_DEFAULT vlm
 task 677
 STandby
 task 382
@@ -198,37 +197,35 @@ eventlog
 MailMessage.To
 _DEFAULT MailMessage.To
 reflector
+outlook
 GetOrdinal
 _DEFAULT GetOrdinal
 snippetcompiler
 task 741
+calendar
+mailto:
 services
 snippets
 excel
+meebo
+chrome
+sqlserver
 addremoveprograms
 regedit
-bash
-BeginExecuteNonQuery
-_DEFAULT BeginExecuteNonQuery
-calendar
-xplorer2
-chrome
-notepad
-hosts
+vlm
+_DEFAULT vlm
 vs2008
-sourcesafe
-c;ukmanleo
-vim
-meebo
-firefox
-backpack
-cmd
-task 735
-sqlserver
-mailto:
+c:\windows\system32\drivers\etc\
 internetexplorer
-virtualpc
+hosts
+Response.BinaryWrite
+_DEFAULT Response.BinaryWrite
 terminals
-httprequest
-_DEFAULT httprequest
-outlook
+c;ukmanleo
+xplorer2
+iis
+cmd
+vim
+firefox
+sourcesafe
+notepad
