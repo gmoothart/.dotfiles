@@ -151,7 +151,7 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 "
 " Shortcut for generating ctags
 "
-command! Gentags :! ctags -R .
+command! Gentags :! ctags -R --exclude=_vendor .
 
 "allow local .vimrc files
 set secure
