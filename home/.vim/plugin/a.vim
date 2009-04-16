@@ -102,6 +102,10 @@ call <SID>AddAlternateExtensionMapping('mli',"ml")
 " asp.net stuff
 call <SID>AddAlternateExtensionMapping('aspx.cs', 'aspx')
 call <SID>AddAlternateExtensionMapping('aspx', 'aspx.cs')
+call <SID>AddAlternateExtensionMapping('ascx.cs', 'ascx')
+call <SID>AddAlternateExtensionMapping('ascx', 'ascx.cs')
+call <SID>AddAlternateExtensionMapping('master.cs', 'master')
+call <SID>AddAlternateExtensionMapping('master', 'master.cs')
 
 " Setup default search path, unless the user has specified
 " a path in their [._]vimrc. 

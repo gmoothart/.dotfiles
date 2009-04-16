@@ -185,19 +185,15 @@ task 195
 filemon
 devepost
 task 677
-STandby
 task 382
-jsonviewer
 chromehelp
 _DEFAULT chromehelp
 c# as
 _DEFAULT c# as
 restartwww
-eventlog
 MailMessage.To
 _DEFAULT MailMessage.To
 reflector
-outlook
 GetOrdinal
 _DEFAULT GetOrdinal
 snippetcompiler
@@ -208,24 +204,32 @@ services
 snippets
 excel
 meebo
-chrome
 sqlserver
 addremoveprograms
 regedit
 vlm
 _DEFAULT vlm
-vs2008
 c:\windows\system32\drivers\etc\
-internetexplorer
-hosts
 Response.BinaryWrite
 _DEFAULT Response.BinaryWrite
-terminals
-c;ukmanleo
-xplorer2
-iis
-cmd
-vim
-firefox
+chrome
 sourcesafe
 notepad
+string.startswith
+_DEFAULT string.startswith
+eventlog
+terminals
+cmd
+hosts
+jsonviewer
+internetexplorer
+standby
+vs2008
+outlook
+xplorer2
+firefox
+string.Join
+_DEFAULT string.Join
+vim
+iis
+c;ukmanleo

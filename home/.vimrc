@@ -36,7 +36,6 @@ set hidden
 set autowriteall
 
 
-
 "
 " Searching options
 "
@@ -66,6 +65,9 @@ set nowrap
 "set number
 filetype plugin on
 filetype indent on
+winpos 50 50
+set lines=50
+set columns=100
 
 "
 " Function key remappings
@@ -91,6 +93,9 @@ noremap <Leader>as :AS<CR>
 noremap <Leader>av :AV<CR>
 
 noremap <Leader>r :!rake 
+
+noremap <Leader>co :VSScheckout
+noremap <Leader>ci :VSScheckin
 
 
 "
@@ -145,8 +150,9 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 
 "
 " Shortcut for generating ctags
-" TODO: this is not sufficiently general...
 "
-command! Gentags :! ctags -R --exclude=YAHOO .
+command! Gentags :! ctags -R .
 
-
+"allow local .vimrc files
+set secure
+set exrc
