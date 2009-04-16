@@ -1,4 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AutoHamachi\Parameters]
-"Application"="c:\\program files\\hamachi\\hamachi.exe -srvany -config \"C:\\Documents and Settings\\Administrator\\Application Data\\Hamachi\""
