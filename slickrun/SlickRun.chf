@@ -75,7 +75,6 @@ debugclr
 define journey
 entlibhelp
 gabe
-paint.net
 el
 fusion
 jdiskreport
@@ -132,12 +131,10 @@ morning
 C:\GAbe\DOcs\
 hibernate
 ctfmon
-displayproperties
 autoruns
 fi
 keyboard
 grep
-virtualpc
 mspaint
 remotedesktop
 svnhelp
@@ -160,7 +157,6 @@ bubbs
 thunderbird
 vault
 gvim
-backpack
 task 491
 task 438
 task 338
@@ -172,20 +168,20 @@ clrdebug
 task 606
 task 512
 diffmerge
-diff
 sci
 _DEFAULT sci
-calc
 task 430
-gallio
 regulazy
 n0
 _DEFAULT n0
 task 195
 filemon
 devepost
+vlm
+_DEFAULT vlm
 task 677
 task 382
+jsonviewer
 chromehelp
 _DEFAULT chromehelp
 c# as
@@ -196,40 +192,57 @@ _DEFAULT MailMessage.To
 reflector
 GetOrdinal
 _DEFAULT GetOrdinal
-snippetcompiler
 task 741
-calendar
-mailto:
-services
 snippets
 excel
-meebo
-sqlserver
-addremoveprograms
-regedit
-vlm
-_DEFAULT vlm
-c:\windows\system32\drivers\etc\
-Response.BinaryWrite
-_DEFAULT Response.BinaryWrite
-chrome
-sourcesafe
-notepad
-string.startswith
-_DEFAULT string.startswith
-eventlog
-terminals
-cmd
+bash
+BeginExecuteNonQuery
+_DEFAULT BeginExecuteNonQuery
+httprequest
+_DEFAULT httprequest
+calc
+cmg
+_DEFAULT cmg
 hosts
-jsonviewer
-internetexplorer
-standby
-vs2008
-outlook
-xplorer2
-firefox
-string.Join
-_DEFAULT string.Join
-vim
+regedt32
+addremoveprograms
+fiddler
+task 735
+paint.net
+snippetcompiler
+ping
+gallio
 iis
+regedit
+ie6
+_DEFAULT ie6
+task 780
+meebo
+virtualpc
+hahlo
+_DEFAULT hahlo
+displayproperties
+outlook
+vs2008
+sourcesafe
+diff
+xplorer2
+eventlog
+notepad
+bool.parse
+_DEFAULT bool.parse
+sqlserver
+standby
+firefox
+services
+task 750
+task 730
+terminals
+mailto:
+cmd
+chrome
+vim
+backpack
 c;ukmanleo
+calendar
+internetexplorer

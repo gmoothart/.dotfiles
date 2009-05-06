@@ -31,9 +31,9 @@ GUID={316ECF73-9642-41A5-9046-9AD9536B5644}
 StartMode=5
 UseRunAs=0
 [backpack]
-Filename="C:\Program Files\Mozilla Firefox\firefox.exe"
-Path="C:\Documents and Settings\gmoothart\Application Data\Mozilla\Firefox\Profiles\gzt2yi1u.default\extensions\refractor@developer.mozilla.org\prism"
-Params="-app application.ini -override "C:\Documents and Settings\gmoothart\Application Data\WebApps\backpack@prism.app\override.ini" -webapp backpack@prism.app"
+Filename=""C:\Documents and Settings\gmoothart\Local Settings\Application Data\Google\Chrome\Application\chrome.exe""
+Path=""
+Params="--app=http://puznee.backpackit.com/homepage"
 Notes=""
 GUID={C63B99D3-B529-49D1-8306-7A8531BA45F1}
 StartMode=5
@@ -71,9 +71,9 @@ GUID={01E1834F-3CB9-4AB6-9DDC-903B5BB95078}
 StartMode=5
 UseRunAs=0
 [calendar]
-Filename=""C:\Program Files\Mozilla Firefox\firefox.exe""
+Filename="C:\Documents and Settings\gmoothart\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
 Path="C:\Documents and Settings\gmoothart\Application Data\Mozilla\Firefox\Profiles\gzt2yi1u.default\extensions\refractor@developer.mozilla.org\prism"
-Params="-app application.ini -override "C:\Documents and Settings\gmoothart\Application Data\WebApps\calendar@prism.app\override.ini" -webapp calendar@prism.app"
+Params="--app=http://www.google.com/calendar/render"
 Notes=""
 GUID={8B2FB660-2591-4984-9537-19751E350B30}
 StartMode=5
@@ -111,8 +111,8 @@ GUID={EF18D5FA-D3B6-41E8-8745-6DF89EA78E65}
 StartMode=5
 UseRunAs=0
 [cmd]
-Filename="cmd"
-Path=""
+Filename="%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe"
+Path="%HOMEDRIVE%%HOMEPATH%"
 Params=""
 Notes=""
 GUID={7B348414-35B6-412F-8484-E0BBE8EFCFFF}
@@ -471,9 +471,9 @@ GUID={5E5A2DF8-DFBB-44E4-B0F5-3CEF777C40CF}
 StartMode=5
 UseRunAs=0
 [meebo]
-Filename="C:\Program Files\Mozilla Firefox\firefox.exe"
-Path="C:\Documents and Settings\gmoothart\Application Data\Mozilla\Firefox\Profiles\gzt2yi1u.default\extensions\refractor@developer.mozilla.org\prism"
-Params=" -app application.ini -override "C:\Documents and Settings\gmoothart\Application Data\WebApps\meebo@prism.app\override.ini" -webapp meebo@prism.app"
+Filename="C:\Documents and Settings\gmoothart\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
+Path=""
+Params="--app=https://www.meebo.com/"
 Notes=""
 GUID={7D8ECDA8-4146-4F84-9162-3834998576A5}
 StartMode=5
