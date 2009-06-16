@@ -295,7 +295,7 @@ GUID={780C05BC-9037-4EAA-8A8B-E011A4A7B109}
 StartMode=5
 UseRunAs=0
 [fusion]
-Filename="C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\Bin\FUSLOGVW.exe"
+Filename="C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\FUSLOGVW.exe"
 Path=""
 Params=""
 Notes=""
@@ -662,14 +662,6 @@ Notes=""
 GUID={482C1A30-F382-449E-B6DF-3182976488C1}
 StartMode=5
 UseRunAs=0
-[sqladmin]
-Filename="C:\WINDOWS\system32\mmc.exe"
-Path=""
-Params="/s "C:\Program Files\Microsoft SQL Server\80\Tools\BINN\SQL Server Enterprise Manager.MSC""
-Notes=""
-GUID={9403AC12-97C6-4C49-A65F-E00003C21A04}
-StartMode=5
-UseRunAs=0
 [sqlhelp]
 Filename="c:\WINDOWS\hh.exe"
 Path=""
@@ -679,7 +671,7 @@ GUID={7101F0BE-4F5B-4EBA-95C3-453AEC6477B3}
 StartMode=5
 UseRunAs=0
 [sqlserver]
-Filename="C:\Program Files\Microsoft SQL Server\80\Tools\Binn\isqlw.exe"
+Filename="C:\Program Files\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\Ssms.exe"
 Path=""
 Params=""
 Notes=""
