@@ -115,7 +115,11 @@ inoremap <C-s> <Esc>:w<CR>a
 nnoremap <space> <C-f>
 nnoremap <S-space> <C-b>
 
-nnoremap <C-Tab> <C-^>
+noremap <C-Tab> <C-^>
+
+"clear highlighted search terms with <esc> in normal mode
+nnoremap <esc> :nohlsearch<return><esc>
+
 "
 " Editing Commands
 "
@@ -131,8 +135,6 @@ nnoremap <S-CR> O<Esc>
 " use tab to indent. In visual mode, keep the selection highlighted
 nnoremap <Tab> >>
 nnoremap <S-Tab> <<
-vnoremap <Tab> ><CR>gv
-vnoremap <S-Tab> <<CR>gv
 
 
 

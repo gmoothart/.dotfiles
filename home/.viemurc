@@ -19,6 +19,9 @@ noremap Y y$
 " Function-key remappings
 nnoremap <F4> :bd<CR>
 
+"clear highlighted search terms with <esc> in normal mode
+nnoremap <esc> :nohlsearch<return><esc>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak Bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
