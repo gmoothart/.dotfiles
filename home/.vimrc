@@ -71,14 +71,28 @@ set columns=100
 
 "
 " Function key remappings
+" These work in both normal and insert mode
 "
 nnoremap <F3> :vimgrep 
+inoremap <F3> <esc>:vimgrep 
+
 nnoremap <F4> :bd<CR>
+inoremap <F4> <esc>:bd<CR>
+
 nnoremap <F6> :bp<CR>
+inoremap <F6> <esc>:bp<CR>
+
 nnoremap <F7> :bn<CR>
+inoremap <F7> <esc>:bn<CR>
+
 nnoremap <F8> :cp<CR>
+inoremap <F8> <esc>:cp<CR>
+
 nnoremap <F9> :cn<CR>
-noremap <F12> :A<CR> 
+inoremap <F9> <esc>:cn<CR>
+
+nnoremap <F12> :A<CR> 
+inoremap <F12> <esc>:A<CR> 
 
 "
 " Leader remappings>
@@ -132,10 +146,11 @@ noremap Y y$
 nnoremap <CR> o<Esc>
 nnoremap <S-CR> O<Esc>
 
-" use tab to indent. In visual mode, keep the selection highlighted
+" use tab to indent, in normal and visual mode.
 nnoremap <Tab> >>
+vnoremap <Tab> >
 nnoremap <S-Tab> <<
-
+vnoremap <S-Tab> <
 
 
 "

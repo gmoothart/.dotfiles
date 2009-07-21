@@ -5,9 +5,11 @@
 " Use the nicer address bar  
 noremap o <A-d>
 noremap t <C-t>
+"set complete=ls
 
 " Options
 set guioptions+=TBn
+"set wildoptions="auto"
 
 " Restore normal window title  
 set titlestring="Mozilla Firefox"
@@ -22,6 +24,9 @@ noremap v :tab viewsource<CR>
 " easier next/prev tab
 noremap [ gT
 noremap ] gt
+
+"clear highlighted search terms with <esc> in normal mode
+nnoremap <esc> :nohlsearch<return><esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak Bindings

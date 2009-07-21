@@ -74,10 +74,8 @@ debugclr
 define journey
 entlibhelp
 gabe
-el
 jdiskreport
 msconfig
-irb
 zip
 write
 msdn CompareTo
@@ -115,7 +113,6 @@ msdn StaticSiteMapProvider
 livewriter
 msdn DataList
 msdn asp:textbox
-safari
 vnc
 itunes
 nunit
@@ -195,66 +192,100 @@ cmg
 _DEFAULT cmg
 regedt32
 fiddler
-snippetcompiler
 ping
-gallio
-iis
 ie6
 _DEFAULT ie6
 task 780
 meebo
 hahlo
 _DEFAULT hahlo
-displayproperties
 bool.parse
 _DEFAULT bool.parse
-standby
 task 750
 task 730
 task 735
-paint.net
 paint
-snippets
-mspaint
-addremoveprograms
 filemon
 SiteMapResolve
 _DEFAULT SiteMapResolve
-hosts
-services
 fusion
 regedit
 Convert.ChangeType
 _DEFAULT Convert.ChangeType
-reflector
-ghci
 task 819
-backpack
 vlm
 _DEFAULT vlm
-vim
 tasks
 sharepoint
-mailto:
-c;ukmanleo
-outlook
-vs2008
-calc
-chrome
-firefox
-calendar
-virtualpc
-xplorer2
 Stream<T>
 _DEFAULT Stream<T>
-diff
-sourcesafe
-jsonviewer
 System.ServiceProcess
 _DEFAULT System.ServiceProcess
-sqlserver
-internetexplorer
-notepad
-cmd
+virtualpc
+GetEnumerator
+_DEFAULT GetEnumerator
+ghci
+displayproperties
+procexp
+standby
+fileinfo.delete
+_DEFAULT fileinfo.delete
+iis
+snippets
+ToList
+_DEFAULT ToList
+reflector
+Server.MapPath
+_DEFAULT Server.MapPath
+TryParse
+_DEFAULT TryParse
+Convert.ToInt32
+_DEFAULT Convert.ToInt32
+snippetcompiler
+irb
+safari
+diff
+addrange
+_DEFAULT addrange
+linq select
+_DEFAULT linq select
+shutdown
+paint.net
+c;ukmanleo
+_DEFAULT etc
+xpathtester
+etc
+addremoveprograms
+Path.GetFullPath
+_DEFAULT Path.GetFullPath
+fileinfo
+_DEFAULT fileinfo
+calc
+backpack
+outlook
+el
+_DEFAULT el
+hosts
+gallio
+mspaint
 eventlog
+xplorer2
+services
+sqlserver
+task 799
+task 813
+task 543
+cmd
+task 816
+task 800
+calendar
+vs2008
+mailto:
+vim
+chrome
+notepad
+firefox
+jsonviewer
+sourcesafe
 terminals
+internetexplorer

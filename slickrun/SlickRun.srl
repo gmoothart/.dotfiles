@@ -262,6 +262,14 @@ Notes=""
 GUID={EFEA10E9-8EA1-48B7-8812-38FE49B9D336}
 StartMode=5
 UseRunAs=0
+[etc]
+Filename="desktop\etc.txt"
+Path=""
+Params=""
+Notes=""
+GUID={8511D6D6-5C4E-43DF-8E85-A32EF30F6739}
+StartMode=5
+UseRunAs=0
 [eventlog]
 Filename="C:\WINDOWS\system32\eventvwr.exe"
 Path=""
