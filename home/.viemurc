@@ -22,6 +22,10 @@ nnoremap <F4> :bd<CR>
 "clear highlighted search terms with <esc> in normal mode
 nnoremap <esc> :nohlsearch<return><esc>
 
+" Make marks easier to navigate
+noremap ' `
+noremap ` '
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak Bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

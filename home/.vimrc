@@ -125,6 +125,9 @@ set ruler
 set dir=$temp       " Make swap live in the %TEMP% directory
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
+noremap ' `
+noremap ` '
+
 
 nnoremap <space> <C-f>
 nnoremap <S-space> <C-b>
