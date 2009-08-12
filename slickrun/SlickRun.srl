@@ -575,7 +575,7 @@ GUID={69E9092C-735C-4096-8336-15D94A37ED61}
 StartMode=5
 UseRunAs=0
 [restartwww]
-Filename="C:\gabe\projects\RestartWWW.ipy"
+Filename="C:\gabe\projects\RestartWWW.irb"
 Path=""
 Params=""
 Notes=""

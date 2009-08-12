@@ -28,6 +28,8 @@ noremap ] gt
 "clear highlighted search terms with <esc> in normal mode
 nnoremap <esc> :nohlsearch<return><esc>
 
+autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com|www\.google\.com\/reader\/view/.test(buffer.URL)
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak Bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
