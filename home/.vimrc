@@ -79,6 +79,10 @@ inoremap <F3> <esc>:vimgrep
 nnoremap <F4> :bd<CR>
 inoremap <F4> <esc>:bd<CR>
 
+nnoremap <F5> :NERDTreeToggle<CR>
+inoremap <F5> <esc>:NERDTreeToggle<CR>
+
+
 nnoremap <F6> :bp<CR>
 inoremap <F6> <esc>:bp<CR>
 
@@ -111,6 +115,16 @@ noremap <Leader>r :!rake
 noremap <Leader>co :VSScheckout
 noremap <Leader>ci :VSScheckin
 
+" Configure FuzzyFinder
+"let g:FuzzyFinderOptions.Base.key_open_split = '<C-k>'
+"let g:FuzzyFinderOptions.Base.key_open_vsplit = '<C-l>'
+"let g:FuzzyFinderOptions.Base.key_open_tab = '<C-t>'
+"let g:FuzzyFinderOptions.File.excluded_path = 'bin\~$|obj\~$|\.exe$|\.dll$|\.scc$|\.jpg$|\.gif$|\.png$'
+"let g:FuzzyFinderOptions.File.excluded_path    = '\v\.o$|\.exe$|\.bak$|\.swp$|\.dll$'
+
+
+nnoremap <Leader>e :FuzzyFinderFile<CR>
+nnoremap <Leader>b :FuzzyFinderBuffer<CR>
 
 "
 "Misc
@@ -176,3 +190,4 @@ command! Gentags :! ctags -R --exclude=_vendor .
 "allow local .vimrc files
 set secure
 set exrc
+
