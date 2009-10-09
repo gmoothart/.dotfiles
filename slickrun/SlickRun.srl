@@ -1,11 +1,3 @@
-[_default]
-Filename="http://www.google.com/search?btnI=I'm Feeling Lucky&q=site%3Amsdn.microsoft.com+$W$"
-Path=""
-Params=""
-Notes=""
-GUID={8BADE1DE-3A0C-450D-A3B3-6E69B68F0E67}
-StartMode=5
-UseRunAs=0
 [addremoveprograms]
 Filename="appwiz.cpl"
 Path=""
@@ -111,8 +103,8 @@ GUID={EF18D5FA-D3B6-41E8-8745-6DF89EA78E65}
 StartMode=5
 UseRunAs=0
 [cmd]
-Filename="%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe"
-Path="%HOMEDRIVE%%HOMEPATH%"
+Filename="C:\utils\Console2\Console.exe"
+Path="c:\wrk"
 Params=""
 Notes=""
 GUID={7B348414-35B6-412F-8484-E0BBE8EFCFFF}
@@ -326,6 +318,14 @@ Notes=""
 GUID={15F942E7-2DC2-4DA0-AE9B-100FB37FAB18}
 StartMode=5
 UseRunAs=0
+[gmail]
+Filename=""C:\Documents and Settings\gmoothart\Local Settings\Application Data\Google\Chrome\Application\chrome.exe""
+Path=""
+Params="--app=https://mail.google.com/mail/"
+Notes=""
+GUID={BF129742-6724-499B-879F-CCCB0AA8F776}
+StartMode=5
+UseRunAs=0
 [google]
 Filename="http://www.google.com/webhp?complete=1&hl=en"
 Path=""
@@ -447,7 +447,7 @@ GUID={0B7970F1-C660-4BD1-BBF3-5AE4F072E3CC}
 StartMode=5
 UseRunAs=0
 [linqpad]
-Filename="C:\utils\LinqPad\LINQPad.exe"
+Filename="C:\utils\LINQPad.exe"
 Path=""
 Params=""
 Notes=""
@@ -484,6 +484,14 @@ Path=""
 Params="--app=https://www.meebo.com/"
 Notes=""
 GUID={7D8ECDA8-4146-4F84-9162-3834998576A5}
+StartMode=5
+UseRunAs=0
+[netmon]
+Filename="C:\Program Files\Microsoft Network Monitor 3\netmon.exe"
+Path=""
+Params=""
+Notes=""
+GUID={200DE503-4BAF-4858-AB7A-79D3FB9DDE8F}
 StartMode=5
 UseRunAs=0
 [notepad]
@@ -639,7 +647,7 @@ GUID={E5BF0B91-0CA8-4624-8A3C-14C1F3BBEB20}
 StartMode=5
 UseRunAs=0
 [snippetcompiler]
-Filename="C:\utils\SnippetCompiler\SnippetCompiler.exe"
+Filename="C:\utils\LinqPad.exe"
 Path=""
 Params=""
 Notes=""
@@ -884,5 +892,13 @@ Path=""
 Params=""
 Notes=""
 GUID={FF37165E-540E-446C-BB91-53DFCB046831}
+StartMode=5
+UseRunAs=0
+[_default]
+Filename="http://www.google.com/search?btnI=I'm Feeling Lucky&q=site%3Amsdn.microsoft.com+$W$"
+Path=""
+Params=""
+Notes=""
+GUID={8BADE1DE-3A0C-450D-A3B3-6E69B68F0E67}
 StartMode=5
 UseRunAs=0

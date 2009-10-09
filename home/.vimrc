@@ -112,8 +112,8 @@ noremap <Leader>av :AV<CR>
 
 noremap <Leader>r :!rake 
 
-noremap <Leader>co :VSScheckout
-noremap <Leader>ci :VSScheckin
+"noremap <Leader>co :VSScheckout
+"noremap <Leader>ci :VSScheckin
 
 " Configure FuzzyFinder
 "let g:FuzzyFinderOptions.Base.key_open_split = '<C-k>'
@@ -122,8 +122,7 @@ noremap <Leader>ci :VSScheckin
 "let g:FuzzyFinderOptions.File.excluded_path = 'bin\~$|obj\~$|\.exe$|\.dll$|\.scc$|\.jpg$|\.gif$|\.png$'
 "let g:FuzzyFinderOptions.File.excluded_path    = '\v\.o$|\.exe$|\.bak$|\.swp$|\.dll$'
 
-
-nnoremap <Leader>e :FuzzyFinderFile<CR>
+noremap <silent><Leader>e :FuzzyFinderFile<CR>
 nnoremap <Leader>b :FuzzyFinderBuffer<CR>
 
 "

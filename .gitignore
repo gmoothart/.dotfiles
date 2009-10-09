@@ -1,7 +1,12 @@
 home/.gem/
 home/.ri/
 home/.recently-used.xbel
-home/vimperator/
+home/.gemrc
+home/.vimfuzzyfinder
 home/_viminfo
+home/vimfiles/
+home/vimperator/
+slickrun/Backup/
 slickrun/SlickRun.chf
 slickrun/SlickRun.ini
+
