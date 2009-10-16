@@ -21,6 +21,12 @@ set runtimepath+=~/.vim  "Use instead of "vimfiles" on windows
 "
 runtime! myscripts/*
 
+if has("gui")
+  winpos 50 50
+  set lines=50
+  set columns=100
+endif
+
 "
 " Platform-specific stuffz
 "
@@ -65,9 +71,6 @@ set nowrap
 "set number
 filetype plugin on
 filetype indent on
-winpos 50 50
-set lines=50
-set columns=100
 
 "
 " Function key remappings
