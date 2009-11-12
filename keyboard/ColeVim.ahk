@@ -14,7 +14,8 @@ SetTitleMatchMode 3  ; Exact matching to avoid confusing T/B with Tab/Backspace.
 ;KeyHistory
 
 ; Easier Esc key - std keyboard
-Capslock::Escape
+; I use a registry mapping now
+;Capslock::Escape
 
 ;Easier Esc key - TypeMatrix
 ;\::Esc
@@ -26,23 +27,23 @@ Capslock::Escape
 ; Arrow keys
 ;==========================
 
-; <A-k> is arrow-down (qwerty n)
-$!N::
+; <A-k> is arrow-down 
+$!K::
     Send, {Down}
 return
 
-; <A-h> is arrow-up (qwerty h)
+; <A-h> is arrow-up 
 $!H::
     Send, {Up}
 return
 
-; <A-j> is arrow-left (qwerty y)
-$!Y::
+; <A-j> is arrow-left 
+$!J::
     Send, {Left}
 return
 
-; <A-l> is arrow-right (qwerty u)
-$!U::
+; <A-l> is arrow-right 
+$!L::
     Send, {Right}
 return
 
@@ -51,23 +52,23 @@ return
 ; C-Arrow keys
 ;==========================
 
-; <C-A-k> is ctrl-down (qwerty n)
-$^!N::
+; <C-A-k> is ctrl-down 
+$^!K::
     Send, ^{Down}
 return
 
-; <C-A-h> is ctrl-up (qwerty h)
+; <C-A-h> is ctrl-up 
 $^!H::
     Send, ^{Up}
 return
 
-; <C-A-j> is ctrl-left (qwerty y)
-$^!Y::
+; <C-A-j> is ctrl-left 
+$^!J::
     Send, ^{Left}
 return
 
-; <C-A-l> is ctrl-right (qwerty u)
-$^!U::
+; <C-A-l> is ctrl-right 
+$^!L::
     Send, ^{Right}
 return
 
@@ -76,29 +77,29 @@ return
 ; S-Arrow Keys
 ;==========================
 
-; <S-A-k> is shift-down (qwerty n)
-$+!N::
+; <S-A-k> is shift-down 
+$+!K::
     Send, +{Down}
 return
 
 ;==========================
-; <S-A-h> is shift-up (qwerty h)
+; <S-A-h> is shift-up 
 ;==========================
 $+!H::
     Send, +{Up}
 return
 
 ;==========================
-; <S-A-j> is shift-left (qwerty y)
+; <S-A-j> is shift-left 
 ;==========================
-$+!Y::
+$+!J::
     Send, +{Left}
 return
 
 ;==========================
-; <S-A-l> is shift-right (qwerty u)
+; <S-A-l> is shift-right 
 ;==========================
-$+!U::
+$+!L::
     Send, +{Right}
 return
 
@@ -106,22 +107,22 @@ return
 ; C-S-Arrow Keys
 ;==========================
 
-; <C-S-A-k> is ctrl-shift-down (qwerty n)
-$+^!N::
+; <C-S-A-k> is ctrl-shift-down 
+$+^!K::
     Send, +^{Down}
 return
 
-; <C-S-A-h> is ctrl-shift-up (qwerty h)
+; <C-S-A-h> is ctrl-shift-up 
 $+^!H::
     Send, +^{Up}
 return
 
-; <C-S-A-j> is ctrl-shift-left (qwerty y)
-$+^!Y::
+; <C-S-A-j> is ctrl-shift-left 
+$+^!J::
     Send, +^{Left}
 return
 
-; <C-S-A-l> is ctrl-shift-right (qwerty u)
-$+^!U::
+; <C-S-A-l> is ctrl-shift-right 
+$+^!L::
     Send, +^{Right}
 return
