@@ -126,3 +126,31 @@ return
 $+^!L::
     Send, +^{Right}
 return
+
+;==========================
+; Win-Arrow Keys for Win7
+;==========================
+; <Win-A-k> is ctrl-down 
+$#!K::
+    Send, #{Down}
+return
+
+; <Win-A-h> is ctrl-up 
+$#!H::
+    Send, #{Up}
+return
+
+; <Win-A-j> is ctrl-left 
+$#!J::
+    Send, #{Left}
+return
+
+; <Win-A-l> is ctrl-right 
+$#!L::
+    Send, #{Right}
+return
+
+
+; <Win-A-k> is Win-down
+
+
