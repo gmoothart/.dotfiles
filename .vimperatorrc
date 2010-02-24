@@ -22,11 +22,14 @@ set editor=gvim.exe -f
 noremap v :tab viewsource<CR>
 
 " easier next/prev tab
-noremap [ gT
-noremap ] gt
+nnoremap <F6> :bp<CR>
+inoremap <F6> <esc>:bp<CR>
+
+nnoremap <F7> :bn<CR>
+inoremap <F7> <esc>:bn<CR>
 
 "clear highlighted search terms with <esc> in normal mode
-nnoremap <esc> :nohlsearch<return><esc>
+"nnoremap <esc> :nohlsearch<CR>
 
 autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com|www\.google\.com\/reader\/view/.test(buffer.URL)
 

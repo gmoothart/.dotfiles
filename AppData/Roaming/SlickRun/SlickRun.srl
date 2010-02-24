@@ -14,16 +14,8 @@ Notes=""
 GUID={0E70E8F5-65AE-4681-8D46-29C4BAED1259}
 StartMode=5
 UseRunAs=0
-[aptana]
-Filename="C:\Program Files\Aptana\Aptana Studio\jre\bin\javaw.exe"
-Path=""
-Params=""
-Notes=""
-GUID={316ECF73-9642-41A5-9046-9AD9536B5644}
-StartMode=5
-UseRunAs=0
 [backpack]
-Filename=""C:\Documents and Settings\gmoothart\Local Settings\Application Data\Google\Chrome\Application\chrome.exe""
+Filename=""%USERPROFILE%\AppData\Local\Google\Chrome\Application\chrome.exe""
 Path=""
 Params="--app=http://puznee.backpackit.com/homepage"
 Notes=""
@@ -47,7 +39,7 @@ GUID={5CEAB2FA-701F-4570-B81A-C33CF6D147D7}
 StartMode=5
 UseRunAs=0
 [bubbs]
-Filename="c:\Program Files\FirstClass\fcc32.exe"
+Filename="C:\Program Files (x86)\FirstClass\fcc32.exe"
 Path=""
 Params=""
 Notes=""
@@ -63,19 +55,11 @@ GUID={01E1834F-3CB9-4AB6-9DDC-903B5BB95078}
 StartMode=5
 UseRunAs=0
 [calendar]
-Filename="C:\Documents and Settings\gmoothart\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
-Path="C:\Documents and Settings\gmoothart\Application Data\Mozilla\Firefox\Profiles\gzt2yi1u.default\extensions\refractor@developer.mozilla.org\prism"
+Filename="%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
+Path=""
 Params="--app=http://www.google.com/calendar/render"
 Notes=""
 GUID={8B2FB660-2591-4984-9537-19751E350B30}
-StartMode=5
-UseRunAs=0
-[camstudio]
-Filename="C:\utils\CamStudio\Recorder.exe"
-Path=""
-Params=""
-Notes=""
-GUID={392E1730-6BB7-4091-A14E-2ED4FD533774}
 StartMode=5
 UseRunAs=0
 [charactermap]
@@ -87,19 +71,11 @@ GUID={D18D2A94-4559-49DA-BA16-59B73E40880D}
 StartMode=5
 UseRunAs=0
 [chrome]
-Filename="C:\Documents and Settings\gmoothart\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
+Filename="%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
 Path=""
 Params=""
 Notes=""
 GUID={57AD7EEB-1916-41D5-9EB8-2D73B07142C2}
-StartMode=5
-UseRunAs=0
-[clrdebug]
-Filename="C:\Program Files\Microsoft.NET\SDK\v2.0\GuiDebug\DbgCLR.exe"
-Path=""
-Params=""
-Notes=""
-GUID={EF18D5FA-D3B6-41E8-8745-6DF89EA78E65}
 StartMode=5
 UseRunAs=0
 [cmd]
@@ -118,60 +94,12 @@ Notes=""
 GUID={CFDA49BC-2611-444B-94C6-B24B3155EDF4}
 StartMode=5
 UseRunAs=0
-[codesmith]
-Filename="C:\utils\codesmith_26\CodeSmith.exe"
-Path=""
-Params=""
-Notes=""
-GUID={D4E8DA64-6EAC-450C-B768-D138F6E3CCBF}
-StartMode=5
-UseRunAs=0
-[colorpick]
-Filename="c:\Program Files\ColorPic 4.1\ColorPic.exe"
-Path=""
-Params=""
-Notes=""
-GUID={FCE67B9F-A206-415D-8B0C-47157A4F3169}
-StartMode=5
-UseRunAs=0
 [commit]
 Filename="C:\gabe\settings\commit.bat"
 Path="c:\gabe\settings"
 Params=""
 Notes=""
 GUID={D2872FB7-99E6-46BF-87ED-2CCF573C0093}
-StartMode=5
-UseRunAs=0
-[darkroom]
-Filename="C:\gabe\settings\dark_room\DarkRoom.exe"
-Path=""
-Params=""
-Notes=""
-GUID={91E63789-B43A-4703-89D5-B0451DDD4427}
-StartMode=5
-UseRunAs=0
-[debugclr]
-Filename="C:\Program Files\Microsoft.NET\SDK\v2.0\GuiDebug\DbgCLR.exe"
-Path=""
-Params=""
-Notes=""
-GUID={375B7777-7C70-47EB-A577-33765C7D4B55}
-StartMode=5
-UseRunAs=0
-[define]
-Filename="http://www.google.com/search?q=define%3A$W$"
-Path=""
-Params=""
-Notes="Merriam-Webster online dictionary"
-GUID=
-StartMode=5
-UseRunAs=0
-[devepost]
-Filename="C:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE"
-Path=""
-Params="/port:5201 /path:"C:\wrk\epostclosing" /vpath:"/""
-Notes=""
-GUID={B0B5858C-D898-4DC2-9FD7-18AE2DEEF1F1}
 StartMode=5
 UseRunAs=0
 [diff]
@@ -198,70 +126,6 @@ Notes=""
 GUID={726D96DA-03B4-4FF9-B1AD-2595C2A2B12C}
 StartMode=5
 UseRunAs=0
-[docs]
-Filename="cmd"
-Path=""
-Params="/k cd c:\gabe\docs"
-Notes=""
-GUID={960FDDD3-CFDC-4C54-9EE2-04EC06DD421D}
-StartMode=5
-UseRunAs=0
-[dotnetcomponents]
-Filename="c:\.NET Components & Utilities"
-Path=""
-Params=""
-Notes=""
-GUID={A66C3181-CC44-47DB-B3AC-6A143E0FDC44}
-StartMode=5
-UseRunAs=0
-[earth]
-Filename="C:\Program Files\Google\Google Earth\GoogleEarth.exe"
-Path=""
-Params=""
-Notes=""
-GUID={9950A219-C26A-49CC-85AD-E583A523A8E9}
-StartMode=5
-UseRunAs=0
-[eclipse]
-Filename="c:\eclipse\eclipse.exe"
-Path=""
-Params=""
-Notes=""
-GUID={45B4ADC8-6906-4675-B70A-618B35847800}
-StartMode=5
-UseRunAs=0
-[emacs]
-Filename="C:\utils\emacs\bin\runemacs.exe"
-Path=""
-Params=""
-Notes=""
-GUID={BCC232C3-B9AA-48DB-A17B-15A9A9470BFE}
-StartMode=5
-UseRunAs=0
-[encyc]
-Filename="iexplore"
-Path=""
-Params="http://encarta.msn.com/find/search.asp?search=$W$"
-Notes="MSN Online Encyclopedia"
-GUID={7A4FFA2F-1DC7-4580-B235-70A21AC1C586}
-StartMode=5
-UseRunAs=0
-[entlibhelp]
-Filename=""%CommonProgramFiles%\Microsoft Shared\Help 8\dexplore.exe""
-Path=""C:\Program Files\Microsoft Enterprise Library January 2006\""
-Params="/helpcol ms-help://MS.VSCC.v80/MS.VSIPCC.v80/ms.EntLib.2006Jan  /LaunchFKeywordTopic ms.practices.2006Jan.entlib.introduction /filter "Enterprise Library - January 2006""
-Notes=""
-GUID={EFEA10E9-8EA1-48B7-8812-38FE49B9D336}
-StartMode=5
-UseRunAs=0
-[etc]
-Filename="desktop\etc.txt"
-Path=""
-Params=""
-Notes=""
-GUID={8511D6D6-5C4E-43DF-8E85-A32EF30F6739}
-StartMode=5
-UseRunAs=0
 [eventlog]
 Filename="C:\WINDOWS\system32\eventvwr.exe"
 Path=""
@@ -271,19 +135,11 @@ GUID={E229C271-FF4B-4B94-A9ED-050C59874FD7}
 StartMode=5
 UseRunAs=0
 [fiddler]
-Filename="C:\Program Files\Fiddler2\Fiddler.exe"
+Filename="C:\Program Files (x86)\Fiddler2\Fiddler.exe"
 Path=""
 Params=""
 Notes=""
 GUID={6993EBB5-80A5-4312-A753-CE92CC1D0591}
-StartMode=5
-UseRunAs=0
-[filezilla]
-Filename="C:\Program Files\FileZilla Client\filezilla.exe"
-Path=""
-Params=""
-Notes=""
-GUID={138A7275-B59B-4183-999C-D0C3AC24E348}
 StartMode=5
 UseRunAs=0
 [ftp]
@@ -317,9 +173,9 @@ Params=""
 Notes=""
 GUID={15F942E7-2DC2-4DA0-AE9B-100FB37FAB18}
 StartMode=5
-UseRunAs=0
+UseRunAs=-1
 [gmail]
-Filename=""C:\Documents and Settings\gmoothart\Local Settings\Application Data\Google\Chrome\Application\chrome.exe""
+Filename=""%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe""
 Path=""
 Params="--app=https://mail.google.com/mail/"
 Notes=""
@@ -332,22 +188,6 @@ Path=""
 Params=""
 Notes="Search two billion web pages"
 GUID={C7D59C80-8323-4DA9-B80A-641150D67ACB}
-StartMode=5
-UseRunAs=0
-[goto]
-Filename="iexplore"
-Path=""
-Params="http://www.google.com/search?hl=en&btnI=I%27m+Feeling+Lucky&q=$W$"
-Notes=""Go to" web search from Google"
-GUID=
-StartMode=5
-UseRunAs=0
-[grep]
-Filename="C:\Program Files\GExperts for Delphi 7\Grep.exe"
-Path=""
-Params=""
-Notes=""
-GUID={516FAFB9-154C-439D-9C6A-2AC2E85E5091}
 StartMode=5
 UseRunAs=0
 [hexeditor]
@@ -374,28 +214,12 @@ Notes=""
 GUID={DA5AD76A-1AEC-4DA0-8959-80BD6B8F7CA3}
 StartMode=5
 UseRunAs=0
-[idesignqueue]
-Filename="C:\blogging\iDesign queue.odt"
-Path=""
-Params=""
-Notes=""
-GUID={460F1407-BD79-44D2-9BF3-69617D75B0EB}
-StartMode=5
-UseRunAs=0
 [iis]
 Filename="%SystemRoot%\system32\inetsrv\iis.msc"
 Path=""
 Params=""
 Notes=""
 GUID={02EC811D-F7A6-4D0A-8C16-21C85F039500}
-StartMode=5
-UseRunAs=0
-[imagineblog]
-Filename="C:\blogging\Imagine blog.odt"
-Path=""
-Params=""
-Notes=""
-GUID={D79E497C-DF26-4DEF-8539-A88249AD86B3}
 StartMode=5
 UseRunAs=0
 [internetexplorer]
@@ -422,16 +246,8 @@ Notes=""
 GUID={E512AF55-FB18-4BFA-8F33-B45437D6F9FC}
 StartMode=5
 UseRunAs=0
-[jedit]
-Filename="javaw.exe"
-Path=""
-Params="-jar "C:\Program Files\jEdit\jedit.jar" -settings=c:\gabe\settings\jedit"
-Notes=""
-GUID={E99F2975-7F04-4B84-86EB-601D8259DC78}
-StartMode=5
-UseRunAs=0
 [jsonviewer]
-Filename="C:\utils\JsonViewerPackage\JsonView\JsonView.exe"
+Filename="C:\utils\JsonViewer\JsonView\JsonView.exe"
 Path=""
 Params=""
 Notes=""
@@ -447,7 +263,7 @@ GUID={0B7970F1-C660-4BD1-BBF3-5AE4F072E3CC}
 StartMode=5
 UseRunAs=0
 [linqpad]
-Filename="C:\utils\LINQPad.exe"
+Filename=""C:\Program Files (x86)\LINQPad\LINQPad.exe""
 Path=""
 Params=""
 Notes=""
@@ -470,16 +286,8 @@ Notes="Launch some morning webpages"
 GUID={BAFF0D1B-C4BC-41C5-A140-88474910404A}
 StartMode=5
 UseRunAs=0
-[mail]
-Filename="C:\PROGRA~1\MOZILL~2\THUNDE~1.EXE"
-Path=""
-Params=""
-Notes="Microsoft Outlook Express e-mail reader"
-GUID={5E5A2DF8-DFBB-44E4-B0F5-3CEF777C40CF}
-StartMode=5
-UseRunAs=0
 [meebo]
-Filename="C:\Documents and Settings\gmoothart\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
+Filename="%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
 Path=""
 Params="--app=https://www.meebo.com/"
 Notes=""
@@ -502,26 +310,10 @@ Notes=""
 GUID={6972AFA4-2FF3-40BA-84CB-851B532C7BF1}
 StartMode=5
 UseRunAs=0
-[nunit]
-Filename="C:\Program Files\NUnit 2.4.3\bin\nunit.exe"
-Path=""
-Params=""
-Notes=""
-GUID={D0743AA0-2728-479B-9CFA-59FE16F097B7}
-StartMode=5
-UseRunAs=0
-[opera]
-Filename="C:\Program Files\Opera\Opera.exe"
-Path=""
-Params=""
-Notes=""
-GUID={E636B426-A713-47E2-8C7E-C0B91835EDE1}
-StartMode=5
-UseRunAs=0
 [outlook]
-Filename="C:\PROGRA~1\MICROS~2\OFFICE11\OUTLOOK.EXE"
+Filename="C:\Windows\System32\rundll32.exe"
 Path=""
-Params=""
+Params="%SystemRoot%\system32\VMCPropertyHandler.dll,LaunchVMSal "Windows XP Mode" "||39b215f7" "Microsoft Office Outlook 2007" "
 Notes=""
 GUID={8089AE5C-7C7E-40FB-B13B-9F2FB9F4A73D}
 StartMode=5
@@ -644,14 +436,6 @@ Path=""
 Params=""
 Notes=""
 GUID={E5BF0B91-0CA8-4624-8A3C-14C1F3BBEB20}
-StartMode=5
-UseRunAs=0
-[snippetcompiler]
-Filename="C:\utils\LinqPad.exe"
-Path=""
-Params=""
-Notes=""
-GUID={EC88AF50-378D-4285-8A85-9B00C3DA3E43}
 StartMode=5
 UseRunAs=0
 [snippets]
@@ -799,13 +583,13 @@ GUID={C04DDEF0-E599-4116-B70B-9F5BBED4DD13}
 StartMode=5
 UseRunAs=0
 [vs2008]
-Filename="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe"
+Filename="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe"
 Path=""
 Params="/nosplash"
 Notes=""
 GUID={62F8E3EC-8ABF-411D-AC3C-D7778FCFF045}
 StartMode=5
-UseRunAs=0
+UseRunAs=-1
 [watinrecorder]
 Filename="C:\Program Files\WatiN Test Recorder\Test Recorder.exe"
 Path=""

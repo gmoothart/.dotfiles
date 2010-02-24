@@ -26,6 +26,12 @@ nnoremap <esc> :nohlsearch<return><esc>
 noremap ' `
 noremap ` '
 
+nnoremap <F8> :cp<CR>
+inoremap <F8> <esc>:cp<CR>
+
+nnoremap <F9> :cn<CR>
+inoremap <F9> <esc>:cn<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak Bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
