@@ -22,7 +22,7 @@ set runtimepath+=~/.vim  "Use instead of "vimfiles" on windows
 runtime! myscripts/*
 
 if has("gui")
-  winpos 50 50
+winpos 50 50
   set lines=50
   set columns=100
 endif
@@ -53,7 +53,7 @@ set ignorecase smartcase
 " colors/font/tab settings, etc.
 "
 colors slate
-set guifont=Consolas:h12,Monaco:h15
+set guifont=Consolas:h12,Monaco:h15,Inconsolata:h12
 syntax on
 
 "
@@ -192,4 +192,3 @@ command! Gentags :! ctags -R --exclude=_vendor .
 "allow local .vimrc files
 set secure
 set exrc
-
