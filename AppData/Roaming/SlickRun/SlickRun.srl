@@ -94,6 +94,14 @@ Notes=""
 GUID={CFDA49BC-2611-444B-94C6-B24B3155EDF4}
 StartMode=5
 UseRunAs=0
+[colevim]
+Filename="C:\Users\gmoothart\keyboard\ColeVim.exe"
+Path=""
+Params=""
+Notes=""
+GUID={19456FF0-E3CE-4BE3-A92C-9DA28A70EB61}
+StartMode=5
+UseRunAs=-1
 [commit]
 Filename="C:\gabe\settings\commit.bat"
 Path="c:\gabe\settings"
