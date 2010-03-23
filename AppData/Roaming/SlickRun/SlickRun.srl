@@ -614,6 +614,14 @@ Notes=""
 GUID={5BE7B9C9-F389-4A00-A448-09E03995F9D0}
 StartMode=5
 UseRunAs=0
+[winscp]
+Filename="C:\Program Files (x86)\WinSCP\WinSCP.exe"
+Path=""
+Params=""
+Notes=""
+GUID={17001994-1D24-4116-B517-7D8E7BF59559}
+StartMode=5
+UseRunAs=0
 [workrave]
 Filename="C:\Program Files\Workrave\lib\Workrave.exe"
 Path=""
