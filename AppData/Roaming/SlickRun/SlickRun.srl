@@ -94,6 +94,14 @@ Notes=""
 GUID={CFDA49BC-2611-444B-94C6-B24B3155EDF4}
 StartMode=5
 UseRunAs=0
+[colevim]
+Filename="C:\Users\gmoothart\keyboard\ColeVim.exe"
+Path=""
+Params=""
+Notes=""
+GUID={19456FF0-E3CE-4BE3-A92C-9DA28A70EB61}
+StartMode=5
+UseRunAs=-1
 [commit]
 Filename="C:\gabe\settings\commit.bat"
 Path="c:\gabe\settings"
@@ -167,11 +175,11 @@ GUID={BB6719D1-36A4-41A9-97FD-E9C58B613CD7}
 StartMode=5
 UseRunAs=0
 [gallio]
-Filename="C:\Program Files\Gallio\bin\Gallio.Icarus.exe"
+Filename="C:\Program Files (x86)\Gallio\bin\Gallio.Icarus.exe"
 Path=""
 Params=""
 Notes=""
-GUID={15F942E7-2DC2-4DA0-AE9B-100FB37FAB18}
+GUID={FB193977-5007-47C6-8B66-E0792EE1E6C8}
 StartMode=5
 UseRunAs=-1
 [gmail]
@@ -311,9 +319,9 @@ GUID={6972AFA4-2FF3-40BA-84CB-851B532C7BF1}
 StartMode=5
 UseRunAs=0
 [outlook]
-Filename="C:\Windows\System32\rundll32.exe"
+Filename="C:\Program Files (x86)\Microsoft Office\Office12\OUTLOOK.EXE"
 Path=""
-Params="%SystemRoot%\system32\VMCPropertyHandler.dll,LaunchVMSal "Windows XP Mode" "||39b215f7" "Microsoft Office Outlook 2007" "
+Params=""
 Notes=""
 GUID={8089AE5C-7C7E-40FB-B13B-9F2FB9F4A73D}
 StartMode=5
@@ -383,7 +391,7 @@ GUID={01EB87E1-8617-46FF-8798-CFD10A51F183}
 StartMode=5
 UseRunAs=0
 [safari]
-Filename="C:\Program Files\Safari\Safari.exe"
+Filename="C:\Program Files (x86)\Safari\Safari.exe"
 Path=""
 Params=""
 Notes=""
@@ -471,7 +479,7 @@ GUID={7101F0BE-4F5B-4EBA-95C3-453AEC6477B3}
 StartMode=5
 UseRunAs=0
 [sqlserver]
-Filename="C:\Program Files\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\Ssms.exe"
+Filename="C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\Ssms.exe"
 Path=""
 Params=""
 Notes=""
@@ -559,7 +567,7 @@ GUID={77730078-FB12-47C9-9DF9-3228B99C78DF}
 StartMode=5
 UseRunAs=0
 [vim]
-Filename="C:\Program Files\Vim\vim72\gvim.exe"
+Filename="C:\Program Files (x86)\Vim\vim72\gvim.exe"
 Path=""
 Params=""
 Notes=""
@@ -572,6 +580,14 @@ Path=""
 Params=""
 Notes=""
 GUID={58F5D305-E2FF-4582-9B3B-BB8CE91D26B3}
+StartMode=5
+UseRunAs=0
+[visio]
+Filename="C:\Program Files (x86)\Microsoft Office\Office12\VISIO.EXE"
+Path=""
+Params=""
+Notes=""
+GUID={1C620DEA-4EAF-481D-AEB4-9748FE8780BE}
 StartMode=5
 UseRunAs=0
 [vnc]
@@ -620,10 +636,16 @@ Path=""
 Params=""
 Notes=""
 GUID={17001994-1D24-4116-B517-7D8E7BF59559}
+[word]
+Filename="C:\Program Files (x86)\Microsoft Office\Office12\WINWORD.EXE"
+Path=""
+Params=""
+Notes=""
+GUID={FE2ED841-3132-49D3-BBB3-DB8E3B7AEC8F}
 StartMode=5
 UseRunAs=0
 [workrave]
-Filename="C:\Program Files\Workrave\lib\Workrave.exe"
+Filename="C:\Program Files (x86)\Workrave\lib\Workrave.exe"
 Path=""
 Params=""
 Notes=""
