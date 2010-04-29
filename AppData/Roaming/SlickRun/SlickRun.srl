@@ -95,7 +95,7 @@ GUID={CFDA49BC-2611-444B-94C6-B24B3155EDF4}
 StartMode=5
 UseRunAs=0
 [colevim]
-Filename="C:\Users\gmoothart\keyboard\ColeVim.exe"
+Filename="%USERPROFILE%\keyboard\ColeVim.exe"
 Path=""
 Params=""
 Notes=""
@@ -276,6 +276,14 @@ Path=""
 Params=""
 Notes=""
 GUID={B5EAE591-0708-429D-A4C9-DFD020AA7050}
+StartMode=5
+UseRunAs=0
+[livewriter]
+Filename="C:\Program Files (x86)\Windows Live\Writer\WindowsLiveWriter.exe"
+Path=""
+Params=""
+Notes=""
+GUID={E10D7F29-0F7A-490C-9DB4-ADFF82A4EBEE}
 StartMode=5
 UseRunAs=0
 [lock]
@@ -636,6 +644,8 @@ Path=""
 Params=""
 Notes=""
 GUID={17001994-1D24-4116-B517-7D8E7BF59559}
+StartMode=5
+UseRunAs=0
 [word]
 Filename="C:\Program Files (x86)\Microsoft Office\Office12\WINWORD.EXE"
 Path=""
