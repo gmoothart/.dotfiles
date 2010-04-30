@@ -79,7 +79,7 @@ GUID={57AD7EEB-1916-41D5-9EB8-2D73B07142C2}
 StartMode=5
 UseRunAs=0
 [cmd]
-Filename="C:\utils\Console2\Console.exe"
+Filename="C:\utils\Console2\bin\release\Console.exe"
 Path="c:\wrk"
 Params=""
 Notes=""
@@ -221,7 +221,7 @@ Params="c:\WINDOWS\system32\drivers\etc\hosts"
 Notes=""
 GUID={DA5AD76A-1AEC-4DA0-8959-80BD6B8F7CA3}
 StartMode=5
-UseRunAs=0
+UseRunAs=-1
 [iis]
 Filename="%SystemRoot%\system32\inetsrv\iis.msc"
 Path=""
@@ -463,7 +463,7 @@ GUID={AC01DB20-F343-488F-A830-CFE4CBC8A318}
 StartMode=5
 UseRunAs=0
 [sourcesafe]
-Filename="C:\Program Files\Microsoft Visual SourceSafe\ssexp.exe"
+Filename="C:\Program Files (x86)\Microsoft Visual SourceSafe\ssexp.exe"
 Path=""
 Params=""
 Notes=""
@@ -636,6 +636,8 @@ Path=""
 Params=""
 Notes=""
 GUID={17001994-1D24-4116-B517-7D8E7BF59559}
+StartMode=5
+UseRunAs=0
 [word]
 Filename="C:\Program Files (x86)\Microsoft Office\Office12\WINWORD.EXE"
 Path=""
