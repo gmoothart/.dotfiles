@@ -101,6 +101,11 @@ inoremap <F9> <esc>:cn<CR>
 nnoremap <F12> :A<CR> 
 inoremap <F12> <esc>:A<CR> 
 
+" format xml.
+" windows syntax. unix will be different
+nnoremap <C-F1> :% !xmllint.exe "%" --format<CR>
+inoremap <C-F1> <esc>:% !xmllint.exe "%" --format<CR>
+
 "
 " Leader remappings>
 "

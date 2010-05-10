@@ -214,14 +214,6 @@ Notes="Windows Hibernate Command"
 GUID={5CD45EA2-DD0B-4BB3-9C1E-0EDEFAF198AA}
 StartMode=5
 UseRunAs=0
-[hosts]
-Filename="gvim"
-Path=""
-Params="c:\WINDOWS\system32\drivers\etc\hosts"
-Notes=""
-GUID={DA5AD76A-1AEC-4DA0-8959-80BD6B8F7CA3}
-StartMode=5
-UseRunAs=-1
 [iis]
 Filename="%SystemRoot%\system32\inetsrv\iis.msc"
 Path=""
