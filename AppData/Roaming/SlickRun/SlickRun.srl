@@ -230,6 +230,14 @@ Notes=""
 GUID={96F7C5B3-C258-4BA6-BB39-ED4A5C91B3F5}
 StartMode=5
 UseRunAs=0
+[issueview]
+Filename="C:\Program Files (x86)\IssueView\UI.exe"
+Path=""
+Params=""
+Notes=""
+GUID={EF19A75F-4C23-4555-A9C7-CEAC878BB722}
+StartMode=5
+UseRunAs=0
 [itunes]
 Filename="c:\Program Files\iTunes\iTunes.exe"
 Path=""

@@ -9,6 +9,9 @@
 	ci = commit
 	co = checkout
 	br = branch
+	sdci = svn dcommit
+	sup = svn rebase
+	sbr = svn branch
 [color]
 	branch = auto
 	diff = auto
@@ -18,3 +21,5 @@
 	autosetupmerge = true
 [github]
 	user = gmoothart
+[merge]
+	tool = kdiff3
