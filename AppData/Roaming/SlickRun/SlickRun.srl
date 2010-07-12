@@ -374,6 +374,14 @@ Notes=""
 GUID={A4494180-3E96-49BD-9D93-A683BF746C4F}
 StartMode=5
 UseRunAs=0
+[regedit]
+Filename="C:\Windows\regedit.exe"
+Path=""
+Params=""
+Notes=""
+GUID={760F3245-838C-4A0E-96EC-D61CDE18EC23}
+StartMode=5
+UseRunAs=0
 [regulazy]
 Filename="C:\utils\regulazy\ReguLazy.exe"
 Path=""
