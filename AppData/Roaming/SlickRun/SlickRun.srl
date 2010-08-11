@@ -175,7 +175,7 @@ GUID={BB6719D1-36A4-41A9-97FD-E9C58B613CD7}
 StartMode=5
 UseRunAs=0
 [gallio]
-Filename="C:\Program Files (x86)\Gallio\bin\Gallio.Icarus.exe"
+Filename="C:\Program Files\Gallio\bin\Gallio.Icarus.exe"
 Path=""
 Params=""
 Notes=""
