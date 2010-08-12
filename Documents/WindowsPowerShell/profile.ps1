@@ -6,13 +6,14 @@ function prompt {
 
     Write-Host("")
     $status_string = ""
-    $forecolor = (Get-Host).UI.RawUI.ForegroundColor
+    $default_forecolor = (Get-Host).UI.RawUI.ForegroundColor 
+    $forecolor = $default_forecolor
 
     # 
     # mark administrator
     #
     if ($pscx:isadmin -and (-not $psISE)) {
-      $status_string += "ADMIN "
+      $forecolor = "red"
     }
 
     #
@@ -21,13 +22,16 @@ function prompt {
     #
     $symbolicref = git symbolic-ref HEAD
     if($symbolicref -ne $NULL) {
-        $status_string += "GIT [" + $symbolicref.substring($symbolicref.LastIndexOf("/") +1) + "] "
+        $git_br = $symbolicref.substring($symbolicref.LastIndexOf("/") + 1)
 
-        # change prompt color if changes
         $differences = (git diff-index --name-status HEAD)
+
+        $dirty_char = ""
         if ($differences) {
-          $forecolor = "yellow"
+          $dirty_char = "*"
         }
+
+        $status_string += "GIT [" + $git_br + $dirty_char + "] "
     }
     else {
         $status_string += "PS "
@@ -36,6 +40,7 @@ function prompt {
     #
     # print out prompt
     #
-    Write-Host ($status_string + $(get-location) + "`n>") -nonewline -foregroundcolor $forecolor
+    Write-Host ($status_string + $(get-location)) -nonewline -foregroundcolor $forecolor
+    Write-Host ("`n>") -nonewline 
     return " "
  }
