@@ -12,6 +12,7 @@
 	sdci = svn dcommit
 	sup = svn rebase
 	sbr = svn branch
+  ffm = merge --ff-only
 [color]
 	branch = auto
 	diff = auto
