@@ -294,14 +294,6 @@ Notes="Show the WindowsXP Screensaver"
 GUID={BB932194-0D67-4CF7-BFCF-079ED449281E}
 StartMode=5
 UseRunAs=0
-[m;sjljt]
-Filename="@MULTI@"
-Path=""
-Params="firefox@outlook@sourcesafe@vs2008@update@c;ukmanleo@snippets@xplorer2@calendar@"
-Notes="Launch some morning webpages"
-GUID={BAFF0D1B-C4BC-41C5-A140-88474910404A}
-StartMode=5
-UseRunAs=0
 [meebo]
 Filename="%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
 Path=""
@@ -310,6 +302,14 @@ Notes=""
 GUID={7D8ECDA8-4146-4F84-9162-3834998576A5}
 StartMode=5
 UseRunAs=0
+[morning]
+Filename="@MULTI@"
+Path=""
+Params="firefox@outlook@cmd@calendar@backpack@vs2008"
+Notes="Launch some morning webpages"
+GUID={BAFF0D1B-C4BC-41C5-A140-88474910404A}
+StartMode=5
+UseRunAs=-1
 [netmon]
 Filename="C:\Program Files\Microsoft Network Monitor 3\netmon.exe"
 Path=""

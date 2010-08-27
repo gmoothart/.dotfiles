@@ -4,16 +4,15 @@ Import-Module Pscx
 
 function prompt {
 
-    Write-Host("")
     $status_string = ""
-    $default_forecolor = (Get-Host).UI.RawUI.ForegroundColor 
-    $forecolor = $default_forecolor
+    #$default_forecolor = (Get-Host).UI.RawUI.ForegroundColor 
 
     # 
     # mark administrator
     #
+    $pathColor = "green"
     if ($pscx:isadmin -and (-not $psISE)) {
-      $forecolor = "red"
+      $pathColor = "red"
     }
 
     #
@@ -31,16 +30,14 @@ function prompt {
           $dirty_char = "*"
         }
 
-        $status_string += "GIT [" + $git_br + $dirty_char + "] "
-    }
-    else {
-        $status_string += "PS "
+        $status_string += "[" + $git_br + $dirty_char + "]"
     }
 
     #
     # print out prompt
     #
-    Write-Host ($status_string + $(get-location)) -nonewline -foregroundcolor $forecolor
-    Write-Host ("`n>") -nonewline 
+    Write-Host $(get-location) -nonewline -foregroundcolor $pathColor
+    Write-Host $status_string -nonewline -foregroundcolor Yellow
+    Write-Host (">") -nonewline 
     return " "
  }
