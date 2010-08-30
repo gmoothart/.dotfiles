@@ -1,0 +1,3 @@
+[submodule "Documents/WindowsPowerShell/Modules/posh-git"]
+	path = Documents/WindowsPowerShell/Modules/posh-git
+	url = git@github.com:gmoothart/posh-git.git
