@@ -1,5 +1,6 @@
 
 Import-Module Pscx
+Import-Module posh-git
 
 
 function prompt {
@@ -46,3 +47,5 @@ function prompt {
     Write-Host ("`n>") -nonewline 
     return " "
  }
+
+ Enable-GitColors

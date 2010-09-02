@@ -622,6 +622,14 @@ Notes=""
 GUID={62F8E3EC-8ABF-411D-AC3C-D7778FCFF045}
 StartMode=5
 UseRunAs=-1
+[vs2010]
+Filename="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe"
+Path=""
+Params="/log"
+Notes=""
+GUID={0DAC580E-35D0-4F00-B501-263EA6CB9E08}
+StartMode=5
+UseRunAs=-1
 [watinrecorder]
 Filename="C:\Program Files\WatiN Test Recorder\Test Recorder.exe"
 Path=""
