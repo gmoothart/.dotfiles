@@ -22,34 +22,33 @@ function prompt {
     Write-Host $(get-location) -nonewline -foregroundcolor $pathColor
 
     # Git Prompt
-    # TODO: needs git 1.7.1!!
-    #if($Global:GitPromptSettings.EnablePromptStatus) {
-    #    $Global:GitStatus = Get-GitStatus
-    #    Write-GitStatus $GitStatus
-    #}
+    if($Global:GitPromptSettings.EnablePromptStatus) {
+        $Global:GitStatus = Get-GitStatus
+        Write-GitStatus $GitStatus
+    }
 
     #
     # Add git prompt
     # http://stackoverflow.com/questions/1287718/how-can-i-display-my-current-git-branch-name-in-my-powershell-prompt/1287895#1287895
     #
-    $symbolicref = git symbolic-ref HEAD
-    if($symbolicref -ne $NULL) {
-        # branch
-        $git_br = $symbolicref.substring($symbolicref.LastIndexOf("/") + 1)
+    #$symbolicref = git symbolic-ref HEAD
+    #if($symbolicref -ne $NULL) {
+    #    # branch
+    #    $git_br = $symbolicref.substring($symbolicref.LastIndexOf("/") + 1)
 
-        # differences
-        $differences = (git diff-index --name-status HEAD)
+    #    # differences
+    #    $differences = (git diff-index --name-status HEAD)
 
-        $dirty_char = ""
-        if ($differences) {
-          $dirty_char = "*"
-        }
+    #    $dirty_char = ""
+    #    if ($differences) {
+    #      $dirty_char = "*"
+    #    }
 
-        # current commit
-        $latest_commit = (git rev-parse $git_br).Substring(0,7)
+    #    # current commit
+    #    $latest_commit = (git rev-parse $git_br).Substring(0,7)
 
-        $status_string += "[" + $latest_commit + " " + $git_br + $dirty_char + "]"
-    }
+    #    $status_string += "[" + $latest_commit + " " + $git_br + $dirty_char + "]"
+    #}
 
     #
     # print out prompt
