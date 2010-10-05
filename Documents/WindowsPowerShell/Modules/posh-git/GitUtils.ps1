@@ -116,7 +116,7 @@ function Get-GitStatus($gitDir = (Get-GitDirectory)) {
             Add-Member -PassThru NoteProperty Unmerged $filesUnmerged
 
         # current commit
-        $commit = (git rev-parse $branch).Substring(0,7)
+        $commit = (git rev-parse --verify HEAD).Substring(0,7)
 
 
         $status = New-Object PSObject -Property @{
