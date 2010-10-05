@@ -23,7 +23,7 @@ $global:GitPromptSettings = New-Object PSObject -Property @{
     BeforeIndexForegroundColor= [ConsoleColor]::Blue
     BeforeIndexBackgroundColor= $Host.UI.RawUI.BackgroundColor
     
-    IndexForegroundColor      = [ConsoleColor]::Blue
+    IndexForegroundColor      = [ConsoleColor]::Yellow
     IndexBackgroundColor      = $Host.UI.RawUI.BackgroundColor
     
     WorkingForegroundColor    = [ConsoleColor]::Yellow
@@ -64,8 +64,11 @@ function Write-GitStatus($status) {
             Write-Host $currentBranch -NoNewline -BackgroundColor $s.Branch2BackgroundColor -ForegroundColor $s.Branch2ForegroundColor
         }
         
-        if($status.HasWorking -or $status.HasIndex) {
+        if ($status.HasWorking) {
             Write-Host "*" -NoNewline -BackgroundColor $s.WorkingBackgroundColor -ForegroundColor $s.WorkingForegroundColor
+        }
+        if ($status.HasIndex) {
+            Write-Host "+" -NoNewline -BackgroundColor $s.IndexBackgroundColor -ForegroundColor $s.IndexForegroundColor
         }
 
         if ($status.HasUntracked) {
