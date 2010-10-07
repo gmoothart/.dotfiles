@@ -4,6 +4,7 @@
 [core]
 	excludesfile = /Users/gabe/.gitignore
 	autocrlf = false
+	editor = 'c:/progra~2/Vim/vim72/gvim.exe' %*
 [alias]
 	st = status
 	ci = commit
