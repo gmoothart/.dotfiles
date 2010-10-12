@@ -37,7 +37,7 @@ set fileformats=unix,dos,mac
 
 "
 " Buffer switching
-"
+
 set hidden
 set autowriteall
 
@@ -71,6 +71,9 @@ set nowrap
 "set number
 filetype plugin on
 filetype indent on
+
+" fix slowness on long lines
+set synmaxcol=100
 
 "
 " Function key remappings
