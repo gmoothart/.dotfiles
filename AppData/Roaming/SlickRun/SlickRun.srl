@@ -111,7 +111,7 @@ GUID={D2872FB7-99E6-46BF-87ED-2CCF573C0093}
 StartMode=5
 UseRunAs=0
 [diff]
-Filename="C:\Program Files\WinMerge\WinMergeU.exe"
+Filename="C:\Program Files (x86)\WinMerge\WinMergeU.exe"
 Path=""
 Params=""
 Notes=""
