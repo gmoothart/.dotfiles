@@ -302,6 +302,14 @@ Notes=""
 GUID={7D8ECDA8-4146-4F84-9162-3834998576A5}
 StartMode=5
 UseRunAs=0
+[mint]
+Filename="C:\Users\Gabe\AppData\Local\Google\Chrome\Application\chrome.exe"
+Path=""
+Params="--app=https://wwws.mint.com/overview.event"
+Notes=""
+GUID={1B5FD536-5C3A-4E69-9FBB-89AF61EDD5D8}
+StartMode=5
+UseRunAs=0
 [morning]
 Filename="@MULTI@"
 Path=""
@@ -630,6 +638,14 @@ Notes=""
 GUID={0DAC580E-35D0-4F00-B501-263EA6CB9E08}
 StartMode=5
 UseRunAs=-1
+[vsex]
+Filename="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\VWDExpress.exe"
+Path=""
+Params=""
+Notes=""
+GUID={E3A048F7-9678-4C27-9ED0-228F2C81872E}
+StartMode=5
+UseRunAs=0
 [watinrecorder]
 Filename="C:\Program Files\WatiN Test Recorder\Test Recorder.exe"
 Path=""
