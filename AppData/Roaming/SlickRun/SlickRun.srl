@@ -303,7 +303,7 @@ GUID={7D8ECDA8-4146-4F84-9162-3834998576A5}
 StartMode=5
 UseRunAs=0
 [mint]
-Filename="C:\Users\Gabe\AppData\Local\Google\Chrome\Application\chrome.exe"
+Filename="%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
 Path=""
 Params="--app=https://wwws.mint.com/overview.event"
 Notes=""
