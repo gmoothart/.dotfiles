@@ -13,7 +13,7 @@
 
 set nocompatible
 
-set runtimepath+=~/.vim  "Use instead of "vimfiles" on windows
+set runtimepath^=~/.vim  "Use instead of "vimfiles" on windows
 
 "
 " Grab all customized scripts in a cross-platform way.
