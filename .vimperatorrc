@@ -31,7 +31,7 @@ inoremap <F7> <esc>:bn<CR>
 "clear highlighted search terms with <esc> in normal mode
 "nnoremap <esc> :nohlsearch<CR>
 
-autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com|www\.google\.com\/reader\/view/.test(buffer.URL)
+autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com|www\.google\.com\/reader\/view|duckduckgo\.com/.test(buffer.URL)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak Bindings
