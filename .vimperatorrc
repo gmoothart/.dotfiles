@@ -8,7 +8,7 @@ noremap t <C-t>
 "set complete=ls
 
 " Options
-set guioptions+=TBn
+set gui=tabs,bookmarks,navigation
 "set wildoptions="auto"
 
 " Restore normal window title  
