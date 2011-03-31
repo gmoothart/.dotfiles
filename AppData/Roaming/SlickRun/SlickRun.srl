@@ -470,6 +470,14 @@ Notes=""
 GUID={E5BF0B91-0CA8-4624-8A3C-14C1F3BBEB20}
 StartMode=5
 UseRunAs=0
+[sml]
+Filename="C:\Program Files (x86)\SMLNJ\bin\.run\run.x86-win32.exe"
+Path="C:\Users\Gabe\Documents\My Dropbox\The Little MLer"
+Params=""@SMLload=C:\Program Files (x86)\SMLNJ\bin\.heap\sml""
+Notes=""
+GUID={E8176A65-7C53-4D13-80C0-597AFC46E642}
+StartMode=5
+UseRunAs=0
 [snippets]
 Filename="C:\utils\AutoHotKey\AutoHotkey.exe"
 Path="C:\gabe\settings\keyboard"
