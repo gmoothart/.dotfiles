@@ -13,8 +13,10 @@
 	sdci = svn dcommit
 	sup = svn rebase
 	sbr = svn branch
-  ffm = merge --ff-only
-  lg = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+	ffm = merge --ff-only
+	lg = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+	tfsci = tfs checkintool --build-default-comment
+  difp = diff --patience
 [color]
 	branch = auto
 	diff = auto
@@ -29,3 +31,9 @@
 [gui]
 	fontui = -family Consolas -size 9 -weight normal -slant roman -underline 0 -overstrike 0
 	fontdiff = -family Consolas -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+[mergetool "kdiff3"]
+	path = c:/Program Files (x86)/KDiff3/kdiff3.exe
+[diff]
+	guitool = kdiff3
+[difftool "kdiff3"]
+	path = c:/Program Files (x86)/KDiff3/kdiff3.exe

@@ -5,14 +5,9 @@
 " Use the nicer address bar  
 noremap o <A-d>
 noremap t <C-t>
-"set complete=ls
 
 " Options
 set gui=tabs,bookmarks,navigation
-"set wildoptions="auto"
-
-" Restore normal window title  
-set titlestring="Mozilla Firefox"
 
 set visualbell
 set newtab=all
@@ -31,7 +26,7 @@ inoremap <F7> <esc>:bn<CR>
 "clear highlighted search terms with <esc> in normal mode
 "nnoremap <esc> :nohlsearch<CR>
 
-autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com|www\.google\.com\/reader\/view|duckduckgo\.com/.test(buffer.URL)
+"autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com|www\.google\.com\/reader\/view|duckduckgo\.com/.test(buffer.URL)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak Bindings

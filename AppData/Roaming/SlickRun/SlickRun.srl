@@ -30,6 +30,14 @@ Notes=""
 GUID={C232F7FD-EA1E-4262-983F-74B7214B83B4}
 StartMode=5
 UseRunAs=0
+[batchdir]
+Filename="E:\My Dropbox\batches"
+Path=""
+Params=""
+Notes=""
+GUID={DBF5803C-E29B-4B08-A589-08F9D46BDBC5}
+StartMode=5
+UseRunAs=0
 [blogqueue]
 Filename="C:\blogging\blog queue.odt"
 Path=""
@@ -271,7 +279,7 @@ GUID={0B7970F1-C660-4BD1-BBF3-5AE4F072E3CC}
 StartMode=5
 UseRunAs=0
 [linqpad]
-Filename=""C:\Program Files (x86)\LINQPad\LINQPad.exe""
+Filename="C:\Program Files (x86)\LINQPad4\LINQPad.exe"
 Path=""
 Params=""
 Notes=""
@@ -660,6 +668,14 @@ Path=""
 Params=""
 Notes=""
 GUID={1771506A-2967-4950-BC74-D52055105F6D}
+StartMode=5
+UseRunAs=0
+[windowpad]
+Filename="C:\utils\WindowPad\WindowPad.exe"
+Path=""
+Params=""
+Notes=""
+GUID={A73595C3-4D01-469B-8DE5-EF559A22B0FB}
 StartMode=5
 UseRunAs=0
 [winproject]
