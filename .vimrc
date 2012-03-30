@@ -9,14 +9,19 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 call pathogen#infect()
 
+
+"
+" Platform/environment issues
+"
+set guifont=Consolas:h12,Monaco:h15,Inconsolata:h12
+
 if has("gui")
   set lines=50
   set columns=100
+  colors jellybeans
+else
+  colors slate
 endif
-
-"
-" Platform-specific stuffz
-"
 
 "To avoid issues, use unix line-endings by default
 set fileformats=unix,dos,mac
@@ -24,7 +29,7 @@ set fileformats=unix,dos,mac
 
 "
 " Buffer switching
-
+"
 set hidden
 set autowriteall
 
@@ -39,12 +44,6 @@ set ignorecase smartcase
 "
 " colors/font/tab settings, etc.
 "
-if has("gui")
-  colors jellybeans
-else
-  colors slate
-endif
-set guifont=Consolas:h12,Monaco:h15,Inconsolata:h12
 syntax on
 
 "
