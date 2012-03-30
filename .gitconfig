@@ -17,6 +17,7 @@
 	lg = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
 	tfsci = tfs checkintool --build-default-comment
   difp = diff --patience
+  oops = commit -a --amend
 [color]
 	branch = auto
 	diff = auto

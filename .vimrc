@@ -48,7 +48,11 @@ set ignorecase smartcase
 "
 " colors/font/tab settings, etc.
 "
-colors slate
+if has("gui")
+  colors jellybeans
+else
+  colors slate
+endif
 set guifont=Consolas:h12,Monaco:h15,Inconsolata:h12
 syntax on
 
@@ -162,7 +166,7 @@ nnoremap <Leader>b :FuzzyFinderBuffer<CR>
 set virtualedit=block
 set backspace=indent,eol,start
 set nobackup
-set guioptions-=T
+"set guioptions-=T
 set guioptions+=b
 set showmatch
 set ruler
