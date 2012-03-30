@@ -13,18 +13,16 @@ call pathogen#infect()
 "
 " Platform/environment issues
 "
-set guifont=Consolas:h12,Monaco:h15,Inconsolata:h12
-
 if has("gui")
   set lines=50
   set columns=100
-  colors jellybeans
-else
-  colors slate
 endif
+set guifont=Consolas:h12,Monaco:h15,Inconsolata:h12
 
 "To avoid issues, use unix line-endings by default
 set fileformats=unix,dos,mac
+
+colors jellybeans
 
 
 "
