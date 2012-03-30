@@ -14,6 +14,7 @@
 set nocompatible
 
 set runtimepath^=~/.vim  "Use instead of "vimfiles" on windows
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 "
 " Grab all customized scripts in a cross-platform way.
