@@ -1,15 +1,6 @@
 "
 " VIM Configuration
 "
-" TODO:
-" 1) turbo-nav. Can I use alt- or ctrl- plus hjkl to do 5 motions, like Shai?
-" 2) hex-mode in Vim: http://vim.wikia.com/wiki/Improved_Hex_editing
-" 3) Show whitespace?
-" 4) Add keybindings to make it easier to edit .vim files?
-"    http://www.oreillynet.com/onlamp/blog/2006/08/make_your_vimrc_trivial_to_upd_1.html
-" 5) no line wrapping? 
-"
-"
 
 set nocompatible
 
@@ -166,7 +157,7 @@ nnoremap <Leader>b :FuzzyFinderBuffer<CR>
 set virtualedit=block
 set backspace=indent,eol,start
 set nobackup
-"set guioptions-=T
+set guioptions-=T
 set guioptions+=b
 set showmatch
 set ruler
