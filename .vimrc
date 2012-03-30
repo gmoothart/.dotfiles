@@ -16,14 +16,9 @@ set nocompatible
 set runtimepath^=~/.vim  "Use instead of "vimfiles" on windows
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
-"
-" Grab all customized scripts in a cross-platform way.
-" can use has("unix"), has("win32"), etc. for more complicated scenarios
-"
-runtime! myscripts/*
+call pathogen#infect()
 
 if has("gui")
-winpos 50 50
   set lines=50
   set columns=100
 endif
@@ -74,7 +69,31 @@ filetype plugin on
 filetype indent on
 
 " fix slowness on long lines
-set synmaxcol=100
+set synmaxcol=120
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colemak remappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colemak direction keys
+" j - left
+" l - right
+" h - up
+" k - down
+"
+noremap h k
+noremap j h
+noremap k j
+
+noremap gh gk
+noremap gj gh
+noremap gk gj
+
+" Colemak ':' is slightly harder to hit than qwerty ':'. Make it easier by
+" swapping ':' and ';'
+noremap : ;
+noremap ; :
+
+
 
 "
 " Function key remappings
