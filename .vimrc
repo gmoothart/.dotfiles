@@ -91,15 +91,11 @@ noremap ; :
 " Function key remappings
 " These work in both normal and insert mode
 "
-nnoremap <F3> :vimgrep 
-inoremap <F3> <esc>:vimgrep 
+nnoremap <F2> :NERDTreeToggle<CR>
+inoremap <F2> <esc>:NERDTreeToggle<CR>
 
 nnoremap <F4> :bd<CR>
 inoremap <F4> <esc>:bd<CR>
-
-nnoremap <F5> :NERDTreeToggle<CR>
-inoremap <F5> <esc>:NERDTreeToggle<CR>
-
 
 nnoremap <F6> :bp<CR>
 inoremap <F6> <esc>:bp<CR>
@@ -113,9 +109,6 @@ inoremap <F8> <esc>:cp<CR>
 nnoremap <F9> :cn<CR>
 inoremap <F9> <esc>:cn<CR>
 
-nnoremap <F12> :A<CR> 
-inoremap <F12> <esc>:A<CR> 
-
 " format xml.
 " windows syntax. unix will be different
 nnoremap <C-F1> :% !xmllint.exe "%" --format<CR>
@@ -128,10 +121,11 @@ let mapleader = ","
 " Make vimrc easier to edit
 noremap <Leader>vv :edit ~/.vimrc<CR>
 noremap <Leader>vs :source ~/.vimrc<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
 "configure the Alternate plugin
 let g:alternateNoDefaultAlternate = 1
-noremap <Leader>as :AS<CR>
-noremap <Leader>av :AV<CR>
+
+
 
 noremap <Leader>r :!rake 
 
