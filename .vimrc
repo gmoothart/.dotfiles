@@ -80,6 +80,10 @@ noremap gh gk
 noremap gj gh
 noremap gk gj
 
+noremap <C-w>h <C-w>k
+noremap <C-w>j <C-w>h
+noremap <C-w>k <C-w>j
+
 " Colemak ':' is slightly harder to hit than qwerty ':'. Make it easier by
 " swapping ':' and ';'
 noremap : ;
