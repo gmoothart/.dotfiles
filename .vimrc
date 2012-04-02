@@ -72,13 +72,9 @@ set synmaxcol=120
 " h - up
 " k - down
 "
-noremap h k
+noremap h gk
 noremap j h
-noremap k j
-
-noremap gh gk
-noremap gj gh
-noremap gk gj
+noremap k gj
 
 noremap <C-w>h <C-w>k
 noremap <C-w>j <C-w>h
@@ -139,9 +135,6 @@ noremap <Leader>av :AV<CR>
 
 noremap <Leader>r :!rake 
 
-"noremap <Leader>co :VSScheckout
-"noremap <Leader>ci :VSScheckin
-
 " Configure FuzzyFinder
 "let g:FuzzyFinderOptions.Base.key_open_split = '<C-k>'
 "let g:FuzzyFinderOptions.Base.key_open_vsplit = '<C-l>'
@@ -151,6 +144,8 @@ noremap <Leader>r :!rake
 
 noremap <silent><Leader>e :FuzzyFinderFile<CR>
 nnoremap <Leader>b :FuzzyFinderBuffer<CR>
+
+
 
 "
 "Misc
@@ -162,16 +157,22 @@ set guioptions-=T
 set guioptions+=b
 set showmatch
 set ruler
-set dir=$temp       " Make swap live in the %TEMP% directory
+" Make swap live in the %TEMP% directory
+set dir=$temp
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
 noremap ' `
 noremap ` '
 
 
+"shortcuts for open/close tabs
+nnoremap <C-Insert> :tabnew<CR>
+nnoremap <C-Delete> :tabclose<CR>
+
 nnoremap <space> <C-f>
 nnoremap <S-space> <C-b>
 
+" toggle between current and prev buffer
 noremap <C-Tab> <C-^>
 
 "clear highlighted search terms with <esc> in normal mode
@@ -196,6 +197,7 @@ nnoremap <S-Tab> <<
 vnoremap <S-Tab> <
 
 
+
 "
 " Fall back to keyword-completion if there is no omni-completion. 
 " Bind to C-Space. Courtesy of sontek:
@@ -207,10 +209,12 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
       \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
       \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
 
-
 "
-" Shortcut for generating ctags
+" tags
 "
+"show matches when there is more than one
+noremap <C-]> g<C-]>
+"Shortcut for generating ctags
 command! Gentags :! ctags -R --exclude=_vendor .
 
 "allow local .vimrc files
