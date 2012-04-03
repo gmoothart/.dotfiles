@@ -9,6 +9,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 call pathogen#infect()
 
+stuff here
 
 "
 " Platform/environment issues
@@ -97,17 +98,17 @@ inoremap <F2> <esc>:NERDTreeToggle<CR>
 nnoremap <F4> :bd<CR>
 inoremap <F4> <esc>:bd<CR>
 
-nnoremap <F6> :bp<CR>
-inoremap <F6> <esc>:bp<CR>
+nnoremap <F5> :bp<CR>
+inoremap <F5> <esc>:bp<CR>
 
-nnoremap <F7> :bn<CR>
-inoremap <F7> <esc>:bn<CR>
+nnoremap <F6> :bn<CR>
+inoremap <F6> <esc>:bn<CR>
 
-nnoremap <F8> :cp<CR>
-inoremap <F8> <esc>:cp<CR>
+nnoremap <F7> :cp<CR>
+inoremap <F7> <esc>:cp<CR>
 
-nnoremap <F9> :cn<CR>
-inoremap <F9> <esc>:cn<CR>
+nnoremap <F8> :cn<CR>
+inoremap <F8> <esc>:cn<CR>
 
 " format xml.
 " windows syntax. unix will be different
