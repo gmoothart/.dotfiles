@@ -9,8 +9,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 call pathogen#infect()
 
-stuff here
-
 "
 " Platform/environment issues
 "
@@ -126,8 +124,6 @@ noremap <Leader>vs :source ~/.vimrc<CR>:exe ":echo 'vimrc reloaded'"<CR>
 "configure the Alternate plugin
 let g:alternateNoDefaultAlternate = 1
 
-
-
 noremap <Leader>r :!rake 
 
 " Configure FuzzyFinder
@@ -137,8 +133,8 @@ noremap <Leader>r :!rake
 "let g:FuzzyFinderOptions.File.excluded_path = 'bin\~$|obj\~$|\.exe$|\.dll$|\.scc$|\.jpg$|\.gif$|\.png$'
 "let g:FuzzyFinderOptions.File.excluded_path    = '\v\.o$|\.exe$|\.bak$|\.swp$|\.dll$'
 
-noremap <silent><Leader>e :FuzzyFinderFile<CR>
-nnoremap <Leader>b :FuzzyFinderBuffer<CR>
+noremap <silent><Leader>e :FufFile<CR>
+nnoremap <Leader>b :FufBuffer<CR>
 
 
 

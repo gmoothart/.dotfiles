@@ -24,8 +24,8 @@
 		<font name="Consolas" size="11" bold="0" italic="0" smoothing="0">
 			<color use="0" r="0" g="0" b="0"/>
 		</font>
-		<window title="Console" icon="" use_tab_icon="1" use_console_title="0" show_cmd="1" show_cmd_tabs="1" use_tab_title="1" trim_tab_titles="20"/>
-		<controls show_menu="0" show_toolbar="0" show_statusbar="0" show_tabs="1" hide_single_tab="1" show_scrollbars="1"/>
+		<window title="Console" icon="" use_tab_icon="1" use_console_title="0" show_cmd="1" show_cmd_tabs="1" use_tab_title="1" trim_tab_titles="20" trim_tab_titles_right="0"/>
+		<controls show_menu="0" show_toolbar="0" show_statusbar="0" show_tabs="1" hide_single_tab="1" show_scrollbars="1" tabs_on_bottom="0" flat_scrollbars="0"/>
 		<styles caption="1" resizable="1" taskbar_button="1" border="1" inside_border="2" tray_icon="0">
 			<selection_color r="255" g="255" b="255"/>
 		</styles>
@@ -33,7 +33,7 @@
 		<transparency type="0" active_alpha="255" inactive_alpha="255" r="0" g="0" b="0"/>
 	</appearance>
 	<behavior>
-		<copy_paste copy_on_select="0" clear_on_copy="1" no_wrap="1" trim_spaces="1" copy_newline_char="0"/>
+		<copy_paste copy_on_select="1" clear_on_copy="1" no_wrap="1" trim_spaces="1" copy_newline_char="0" sensitive_copy="1"/>
 		<scroll page_scroll_rows="0"/>
 		<tab_highlight flashes="3" stay_highligted="1"/>
 	</behavior>
@@ -90,8 +90,8 @@
 		</actions>
 	</mouse>
 	<tabs>
-		<tab title="Console2">
-			<console shell="" init_dir=""/>
+		<tab title="Console2" use_default_icon="0">
+			<console shell="" init_dir="" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -99,8 +99,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="PS">
-			<console shell="%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe" init_dir="e:\wrk"/>
+		<tab title="PS" use_default_icon="0">
+			<console shell="%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe" init_dir="e:\wrk" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">

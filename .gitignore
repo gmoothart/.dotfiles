@@ -1,3 +1,6 @@
 .DS_Store
 .ssh
 *.swp
+bin/
+obj/
+*.tmp
