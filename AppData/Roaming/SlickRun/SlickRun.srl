@@ -589,7 +589,7 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [_default]
-Filename="http://duckduckgo.com/?q="
+Filename="http://duckduckgo.com/?q=$W$"
 GUID={8BADE1DE-3A0C-450D-A3B3-6E69B68F0E67}
 StartMode=5
 UseRunAs=0
