@@ -60,7 +60,7 @@ filetype plugin on
 filetype indent on
 
 " fix slowness on long lines
-set synmaxcol=120
+set synmaxcol=200
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak remappings
@@ -93,14 +93,17 @@ noremap ; :
 nnoremap <F2> :NERDTreeToggle<CR>
 inoremap <F2> <esc>:NERDTreeToggle<CR>
 
-nnoremap <F4> :bd<CR>
-inoremap <F4> <esc>:bd<CR>
+" use bclose plugin to close a buffer but not its window
+nnoremap <F4> <Plug>Kwbd
+inoremap <F4> <esc><Plug>Kwbd
 
+"iterate over open buffers
 nnoremap <F5> :bp<CR>
 inoremap <F5> <esc>:bp<CR>
 
 nnoremap <F6> :bn<CR>
 inoremap <F6> <esc>:bn<CR>
+
 
 nnoremap <F7> :cp<CR>
 inoremap <F7> <esc>:cp<CR>

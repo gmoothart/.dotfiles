@@ -153,6 +153,13 @@ GUID={5CD45EA2-DD0B-4BB3-9C1E-0EDEFAF198AA}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[hosts]
+Filename="gvim"
+Params="C:\Windows\System32\drivers\etc\hosts"
+GUID={9086BFDC-5120-4D1D-8AD9-C9EDA14DF986}
+StartMode=1
+UseRunAs=-1
+Disable32BitRedir=0
 [iis]
 Filename="%SystemRoot%\system32\inetsrv\iis.msc"
 GUID={02EC811D-F7A6-4D0A-8C16-21C85F039500}
