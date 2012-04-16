@@ -60,7 +60,7 @@ filetype plugin on
 filetype indent on
 
 " fix slowness on long lines
-set synmaxcol=200
+set synmaxcol=150
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak remappings
@@ -94,8 +94,8 @@ nnoremap <F2> :NERDTreeToggle<CR>
 inoremap <F2> <esc>:NERDTreeToggle<CR>
 
 " use bclose plugin to close a buffer but not its window
-nnoremap <F4> <Plug>Kwbd
-inoremap <F4> <esc><Plug>Kwbd
+nnoremap <F4> :Kwbd<CR>
+inoremap <F4> <esc>:Kwbd<CR>
 
 "iterate over open buffers
 nnoremap <F5> :bp<CR>
@@ -209,7 +209,7 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 "show matches when there is more than one
 noremap <C-]> g<C-]>
 "Shortcut for generating ctags
-command! Gentags :! ctags -R --exclude=_vendor .
+command! Gentags :! ctags -R --exclude=ckeditor --exclude=vendor --exclude=log
 
 "allow local .vimrc files
 set secure
