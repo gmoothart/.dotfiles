@@ -13,10 +13,10 @@ call pathogen#infect()
 " Platform/environment issues
 "
 if has("gui")
-  set lines=50
-  set columns=100
+"  set lines=50
+"  set columns=100
+  set guifont=Consolas:h11,Monaco:h15,Inconsolata:h12
 endif
-set guifont=Consolas:h12,Monaco:h15,Inconsolata:h12
 
 "To avoid issues, use unix line-endings by default
 set fileformats=unix,dos,mac
@@ -111,6 +111,9 @@ inoremap <F7> <esc>:cp<CR>
 nnoremap <F8> :cn<CR>
 inoremap <F8> <esc>:cn<CR>
 
+"jump to tag, showing matches if there are more than one
+noremap <F12> g<C-]>
+
 " format xml.
 " windows syntax. unix will be different
 nnoremap <C-F1> :% !xmllint.exe "%" --format<CR>
@@ -139,6 +142,9 @@ noremap <Leader>r :!rake
 noremap <silent><Leader>e :FufFile<CR>
 nnoremap <Leader>b :FufBuffer<CR>
 
+
+" need to set up snippent mappings manually for some reason
+source ~/.vim/bundle/snipmate.vim/after/plugin/snipMate.vim
 
 
 "
@@ -185,12 +191,12 @@ nnoremap <CR> o<Esc>
 nnoremap <S-CR> O<Esc>
 
 " use tab to indent, in normal and visual mode.
+" xnoremap does not apply them to Select mode, which is desirable for interop
+" with snipMate
 nnoremap <Tab> >>
-vnoremap <Tab> >
+xnoremap <Tab> >
 nnoremap <S-Tab> <<
-vnoremap <S-Tab> <
-
-
+xnoremap <S-Tab> <
 
 "
 " Fall back to keyword-completion if there is no omni-completion. 
@@ -206,8 +212,6 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 "
 " tags
 "
-"show matches when there is more than one
-noremap <C-]> g<C-]>
 "Shortcut for generating ctags
 command! Gentags :! ctags -R --exclude=ckeditor --exclude=vendor --exclude=log
 
