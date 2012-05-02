@@ -15,11 +15,23 @@ call pathogen#infect()
 if has("gui")
 "  set lines=50
 "  set columns=100
-  set guifont=Consolas:h11,Monaco:h15,Inconsolata:h12
 endif
 
 "To avoid issues, use unix line-endings by default
 set fileformats=unix,dos,mac
+
+" Make swap live in the temp directory
+if has('win32')
+  set dir=$temp
+  set guifont=Consolas:h11
+elseif has('unix')
+  set dir=/tmp
+  set backupdir=/tmp
+  set guifont=Inconsolata\ 13
+elseif has('mac')
+  set guifont=Monaco:h15
+endif
+
 
 colors jellybeans
 
@@ -146,6 +158,8 @@ nnoremap <Leader>b :FufBuffer<CR>
 " need to set up snippent mappings manually for some reason
 source ~/.vim/bundle/snipmate.vim/after/plugin/snipMate.vim
 
+let g:NERDTreeDirArrows=0
+
 
 "
 "Misc
@@ -157,10 +171,8 @@ set guioptions-=T
 set guioptions+=b
 set showmatch
 set ruler
-" Make swap live in the %TEMP% directory
-set dir=$temp
 nnoremap <C-s> :w<CR>
-inoremap <C-s> <Esc>:w<CR>a
+inoremap <C-s> <Esc>:w<CR>
 noremap ' `
 noremap ` '
 

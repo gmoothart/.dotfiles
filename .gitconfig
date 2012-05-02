@@ -1,10 +1,11 @@
 [user]
+
   name = Gabe Moothart
   email = gmoothart@gmail.com
 [core]
   excludesfile = /Users/gabe/.gitignore
   autocrlf = false
-  editor = 'c:/progra~2/Vim/vim73/gvim.exe' %*
+  editor = vim
   filemode = false
 [alias]
   st = status
@@ -15,7 +16,7 @@
   sup = svn rebase
   sbr = svn branch
   ffm = merge --ff-only
-  lg = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+  lg = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
   tfsci = tfs checkintool --build-default-comment
   difp = diff --patience
   oops = commit -a --amend
@@ -39,3 +40,9 @@
   guitool = kdiff3
 [difftool "kdiff3"]
   path = kdiff3
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 1135x909+0+24
+	history-view-vpane-position = 583
+	file-view-vpane-position = 732
+	main-window-view = HistoryView
