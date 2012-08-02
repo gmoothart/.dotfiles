@@ -71,6 +71,7 @@ set smartindent
 set foldmethod=syntax
 set nofoldenable
 set nowrap
+set colorcolumn=100
 "set number
 filetype plugin on
 filetype indent on

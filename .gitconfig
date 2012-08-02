@@ -1,5 +1,4 @@
 [user]
-
   name = Gabe Moothart
   email = gmoothart@gmail.com
 [core]
@@ -47,3 +46,5 @@
 	history-view-vpane-position = 583
 	file-view-vpane-position = 732
 	main-window-view = HistoryView
+[merge]
+	tool = kdiff3
