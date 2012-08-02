@@ -18,10 +18,15 @@ if has("gui")
   set guifont=Consolas:h11,Monaco:h15,Inconsolata:h12
 endif
 
+" In many terminal emulators the mouse works just fine, thus enable it.
+if has('mouse')
+  set mouse=a
+endif
+
 "To avoid issues, use unix line-endings by default
 set fileformats=unix,dos,mac
 
-colors jellybeans
+colors slate "go back to jellybeans if we ever get 256 colors
 
 
 "
@@ -60,7 +65,7 @@ filetype plugin on
 filetype indent on
 
 " fix slowness on long lines
-set synmaxcol=150
+"set synmaxcol=150
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak remappings
@@ -92,6 +97,9 @@ noremap ; :
 "
 nnoremap <F2> :NERDTreeToggle<CR>
 inoremap <F2> <esc>:NERDTreeToggle<CR>
+
+nnoremap <F3> :TlistToggle<CR>
+inoremap <F3> <esc>:TlistToggle<CR>
 
 " use bclose plugin to close a buffer but not its window
 nnoremap <F4> :Kwbd<CR>
@@ -145,6 +153,9 @@ nnoremap <Leader>b :FufBuffer<CR>
 
 " need to set up snippent mappings manually for some reason
 source ~/.vim/bundle/snipmate.vim/after/plugin/snipMate.vim
+
+command! Edsnip :execute ":split " . snippets_dir . &ft . ".snippets"
+
 
 
 "

@@ -19,6 +19,7 @@
 	tfsci = tfs checkintool --build-default-comment
   difp = diff --patience
   oops = commit -a --amend
+  unstage = reset HEAD
 [color]
 	branch = auto
 	diff = auto
