@@ -15,7 +15,6 @@ call pathogen#infect()
 if has("gui")
 "  set lines=50
 "  set columns=100
-  set guifont=Consolas:h11,Monaco:h15,Inconsolata:h12
 endif
 
 " In many terminal emulators the mouse works just fine, thus enable it.
@@ -25,6 +24,18 @@ endif
 
 "To avoid issues, use unix line-endings by default
 set fileformats=unix,dos,mac
+
+" Make swap live in the temp directory
+if has('win32')
+  set dir=$temp
+  set guifont=Consolas:h11
+elseif has('unix')
+  set dir=/tmp
+  set backupdir=/tmp
+  set guifont=Inconsolata\ 13
+elseif has('mac')
+  set guifont=Monaco:h15
+endif
 
 colors slate "go back to jellybeans if we ever get 256 colors
 
@@ -156,6 +167,7 @@ source ~/.vim/bundle/snipmate.vim/after/plugin/snipMate.vim
 
 command! Edsnip :execute ":split " . snippets_dir . &ft . ".snippets"
 
+let g:NERDTreeDirArrows=0
 
 
 "
@@ -168,10 +180,8 @@ set guioptions-=T
 set guioptions+=b
 set showmatch
 set ruler
-" Make swap live in the %TEMP% directory
-set dir=$temp
 nnoremap <C-s> :w<CR>
-inoremap <C-s> <Esc>:w<CR>a
+inoremap <C-s> <Esc>:w<CR>
 noremap ' `
 noremap ` '
 
