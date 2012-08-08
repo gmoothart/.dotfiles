@@ -12,14 +12,29 @@ call pathogen#infect()
 "
 " Platform/environment issues
 "
-if has("gui")
+if has("gui_running")
 "  set lines=50
 "  set columns=100
 endif
 
+set t_Co=256
+
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
+endif
+
+
+"settings specific for terminals.
+if $TERM==#"xterm" || $TERM==#"linux" || $TERM==#"cygwin"
+  "higlight status bar when in insert mode
+  set laststatus=2
+  au InsertEnter * hi StatusLine ctermbg=3
+  au InsertLeave * hi StatusLine ctermbg=7
+
+  " Mouse support in xterm does not work beyond 95 or so columns, very confusing
+  " http://stackoverflow.com/questions/7000960/vim-mouse-problem
+  set mouse=""
 endif
 
 "To avoid issues, use unix line-endings by default
@@ -37,7 +52,7 @@ elseif has('mac')
   set guifont=Monaco:h15
 endif
 
-colors slate "go back to jellybeans if we ever get 256 colors
+colors jellybeans
 
 
 "
@@ -71,7 +86,11 @@ set smartindent
 set foldmethod=syntax
 set nofoldenable
 set nowrap
+
 set colorcolumn=100
+highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
+
+
 "set number
 filetype plugin on
 filetype indent on
@@ -100,6 +119,21 @@ noremap <C-w>k <C-w>j
 " swapping ':' and ';'
 noremap : ;
 noremap ; :
+
+" workaround for putty encoding problem.
+if $TERM==#"xterm"
+  set <F2>=[12~
+  set <F3>=[13~
+  set <F4>=[14~
+  set <F5>=[15~
+  set <F6>=[17~
+  set <F7>=[18~
+  set <F8>=[19~
+  set <F9>=[20~
+  set <F10>=[21~
+  set <F11>=[23~
+  set <F12>=[24~
+endif
 
 
 
