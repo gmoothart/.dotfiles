@@ -51,7 +51,7 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [cmd]
-Filename="C:\utils\Console2\Console.exe"
+Filename=""C:\Program Files\ConEmu\ConEmu64.exe""
 Path="c:\wrk"
 GUID={7B348414-35B6-412F-8484-E0BBE8EFCFFF}
 StartMode=5
@@ -275,7 +275,7 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [putty]
-Filename="C:\utils\putty\PUTTY.EXE"
+Filename="C:\Program Files (x86)\PuTTY\putty.exe"
 GUID={951223EF-7BA6-4B9F-B4A9-8F7510406428}
 StartMode=5
 UseRunAs=0
