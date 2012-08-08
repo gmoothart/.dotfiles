@@ -87,7 +87,7 @@ set foldmethod=syntax
 set nofoldenable
 set nowrap
 
-set colorcolumn=100
+set colorcolumn=120
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 
