@@ -167,7 +167,7 @@ nnoremap <F8> :cn<CR>
 inoremap <F8> <esc>:cn<CR>
 
 "jump to tag, showing matches if there are more than one
-noremap <F12> g<C-]>
+noremap <F12> <C-]>
 
 " format xml.
 " windows syntax. unix will be different
