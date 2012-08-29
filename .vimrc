@@ -4,6 +4,7 @@
 
 set nocompatible
 
+"Use :Helptags to install help for all plugins
 set runtimepath^=~/.vim  "Use instead of "vimfiles" on windows
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
@@ -26,11 +27,6 @@ endif
 
 "settings specific for terminals.
 if $TERM==#"xterm" || $TERM==#"linux" || $TERM==#"cygwin"
-  "higlight status bar when in insert mode
-  set laststatus=2
-  au InsertEnter * hi StatusLine ctermbg=3
-  au InsertLeave * hi StatusLine ctermbg=7
-
   " Mouse support in xterm does not work beyond 95 or so columns, very confusing
   " http://stackoverflow.com/questions/7000960/vim-mouse-problem
   set mouse=""
@@ -125,6 +121,9 @@ filetype indent on
 " fix slowness on long lines
 "set synmaxcol=150
 
+" Always show powerline status bar
+set laststatus=2
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colemak remappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -218,8 +217,6 @@ nnoremap <Leader>b :FufBuffer<CR>
 source ~/.vim/bundle/snipmate.vim/after/plugin/snipMate.vim
 
 command! Edsnip :execute ":split " . snippets_dir . &ft . ".snippets"
-
-let g:NERDTreeDirArrows=0
 
 
 "
