@@ -111,14 +111,21 @@ noremap h gk
 noremap j h
 noremap k gj
 
-noremap <C-w>h <C-w>k
-noremap <C-w>j <C-w>h
-noremap <C-w>k <C-w>j
-
 " Colemak ':' is slightly harder to hit than qwerty ':'. Make it easier by
 " swapping ':' and ';'
 noremap : ;
 noremap ; :
+
+" window split mappings
+noremap <C-w>h <C-w>k
+noremap <C-w>j <C-w>h
+noremap <C-w>k <C-w>j
+
+"map <C-w>h <C-k>
+"map <C-w>j <C-h>
+"map <C-w>k <C-j>
+"map <C-w>l <C-l>
+
 
 " workaround for putty encoding problem.
 if $TERM==#"xterm"

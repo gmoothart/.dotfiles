@@ -249,6 +249,13 @@ GUID={200DE503-4BAF-4858-AB7A-79D3FB9DDE8F}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[nl]
+Filename="C:\Program Files (x86)\PuTTY\putty.exe"
+Params="-load Newsletter -A"
+GUID={509912A8-BDD4-451D-91DE-CB4187A62132}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=0
 [notepad]
 Filename="C:\Program Files\Scintilla Text Editor\SciTE.exe"
 GUID={6972AFA4-2FF3-40BA-84CB-851B532C7BF1}
