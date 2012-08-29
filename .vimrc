@@ -35,7 +35,9 @@ if $TERM==#"xterm" || $TERM==#"linux" || $TERM==#"cygwin"
   " http://stackoverflow.com/questions/7000960/vim-mouse-problem
   set mouse=""
 
-  " workaround for putty-specific encoding problem.
+  " workaround for putty-specific encoding problems.
+  "For more help with this:
+  "http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
   if $TERM==#"xterm"
     set <F2>=[12~
     set <F3>=[13~
@@ -48,6 +50,13 @@ if $TERM==#"xterm" || $TERM==#"linux" || $TERM==#"cygwin"
     set <F10>=[21~
     set <F11>=[23~
     set <F12>=[24~
+
+    set <S-Down>=[B
+    set <S-Up>=[A
+    set <S-Left>=[D
+    set <S-Right>=[C
+
+    "Mapping <C-Tab> (and, I think, <S-space> would require patching Putty: "http://stackoverflow.com/a/789593/13356
 
     set t_Co=256
   else "other non-putty terminals
@@ -142,8 +151,8 @@ noremap ; :
 " Function key remappings
 " These work in both normal and insert mode
 "
-nnoremap <F2> :NERDTreeToggle<CR>
-inoremap <F2> <esc>:NERDTreeToggle<CR>
+"nnoremap <F2> :NERDTreeToggle<CR>
+"inoremap <F2> <esc>:NERDTreeToggle<CR>
 
 nnoremap <F3> :TlistToggle<CR>
 inoremap <F3> <esc>:TlistToggle<CR>
@@ -233,7 +242,7 @@ nnoremap <S-space> <C-b>
 noremap <C-Tab> <C-^>
 
 "clear highlighted search terms with <esc> in normal mode
-nnoremap <esc> :nohlsearch<return><esc>
+"nnoremap <esc> :nohlsearch<return><esc>
 
 "
 " Editing Commands

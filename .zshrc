@@ -35,3 +35,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+
+#get rid of funky ctrl-sequences like ctrl-s
+stty ixany
+stty ixoff -ixon
+stty stop undef
+stty start undef
