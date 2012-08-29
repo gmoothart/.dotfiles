@@ -248,8 +248,9 @@ nnoremap <S-space> <C-b>
 " toggle between current and prev buffer
 noremap <C-Tab> <C-^>
 
-"clear highlighted search terms with <esc> in normal mode
-"nnoremap <esc> :nohlsearch<return><esc>
+"Map <C-L> (redraw screen) to also turn off search highlighting until the
+"next search
+nnoremap <C-L> :nohlsearch<CR><C-L>
 
 "
 " Editing Commands
