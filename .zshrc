@@ -41,3 +41,5 @@ stty ixany
 stty ixoff -ixon
 stty stop undef
 stty start undef
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
