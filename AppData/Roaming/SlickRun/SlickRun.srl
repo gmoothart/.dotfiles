@@ -78,6 +78,27 @@ GUID={D2872FB7-99E6-46BF-87ED-2CCF573C0093}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[dev]
+Filename="C:\Dropbox\puttytray\puttytray.exe"
+Params="-file dev -A"
+GUID={6AB736B7-AC79-472E-8842-D17B98050CBD}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=0
+[devim]
+Filename="C:\Program Files (x86)\PuTTY\plink.exe"
+Params="dev -X -A -l gabe gvim"
+GUID={700C0070-73F7-4F95-8F38-1C2971E90CC3}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=0
+[devterm]
+Filename="C:\Program Files (x86)\PuTTY\plink.exe"
+Params="dev -X -A -l gabe gnome-terminal"
+GUID={1FB0AF11-0D2F-47EB-AFE2-4AC17C405E19}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=0
 [diff]
 Filename="C:\Program Files (x86)\WinMerge\WinMergeU.exe"
 GUID={6C8C1F91-F957-4A53-B43F-DC69824DC7D5}
@@ -138,6 +159,13 @@ Filename="http://www.google.com/webhp?complete=1&hl=en"
 Notes="Search two billion web pages"
 GUID={C7D59C80-8323-4DA9-B80A-641150D67ACB}
 StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[hbase]
+Filename="C:\Dropbox\puttytray\puttytray.exe"
+Params="-file hbase -A"
+GUID={11D0F6AF-C777-4CAC-BF0C-3CE32F725B72}
+StartMode=1
 UseRunAs=0
 Disable32BitRedir=0
 [hexeditor]
@@ -250,8 +278,8 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [nl]
-Filename="C:\Program Files (x86)\PuTTY\putty.exe"
-Params="-load Newsletter -A"
+Filename="C:\Dropbox\puttytray\puttytray.exe"
+Params="-file Newsletter -A"
 GUID={509912A8-BDD4-451D-91DE-CB4187A62132}
 StartMode=1
 UseRunAs=0
@@ -282,7 +310,7 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [putty]
-Filename="C:\Program Files (x86)\PuTTY\putty.exe"
+Filename="C:\dropbox\puttytray\puttytray.exe"
 GUID={951223EF-7BA6-4B9F-B4A9-8F7510406428}
 StartMode=5
 UseRunAs=0
@@ -556,6 +584,13 @@ Disable32BitRedir=0
 Filename="C:\Program Files (x86)\Workrave\lib\Workrave.exe"
 GUID={F4EE3D0C-ABDA-44A1-962D-3E5F76ADC94F}
 StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[xming]
+Filename=""C:\Program Files (x86)\Xming\Xming.exe""
+Params=":0 -clipboard -multiwindow -xkblayout colemak"
+GUID={0E65C86D-7475-4A08-A525-92CE79CFB2EF}
+StartMode=1
 UseRunAs=0
 Disable32BitRedir=0
 [xpathtester]
