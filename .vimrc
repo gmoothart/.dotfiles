@@ -31,7 +31,7 @@ if $TERM==#"xterm" || $TERM==#"linux" || $TERM==#"cygwin"
   " http://stackoverflow.com/questions/7000960/vim-mouse-problem
   set mouse=""
 
-  " workaround for putty-specific encoding problems.
+  "workaround for putty-specific encoding problems.
   "For more help with this:
   "http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
   if $TERM==#"xterm"
@@ -77,6 +77,8 @@ elseif has('unix')
 elseif has('mac')
   set guifont=Monaco:h15
 endif
+
+set noswapfile
 
 "
 " Buffer switching

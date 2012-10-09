@@ -2,7 +2,7 @@
   name = Gabe Moothart
   email = gmoothart@gmail.com
 [core]
-  excludesfile = /Users/gabe/.gitignore
+  excludesfile = ~/.gitignore
   autocrlf = false
   editor = vim
   filemode = false
