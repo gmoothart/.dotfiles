@@ -211,7 +211,7 @@ noremap <Leader>r :!rake
 "let g:FuzzyFinderOptions.File.excluded_path = 'bin\~$|obj\~$|\.exe$|\.dll$|\.scc$|\.jpg$|\.gif$|\.png$'
 "let g:FuzzyFinderOptions.File.excluded_path    = '\v\.o$|\.exe$|\.bak$|\.swp$|\.dll$'
 
-noremap <silent><Leader>e :FufFile<CR>
+noremap <silent><Leader>e :FufCoverageFile<CR>
 nnoremap <Leader>b :FufBuffer<CR>
 
 
