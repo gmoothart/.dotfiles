@@ -204,13 +204,6 @@ let g:alternateNoDefaultAlternate = 1
 
 noremap <Leader>r :!rake 
 
-" Configure FuzzyFinder
-"let g:FuzzyFinderOptions.Base.key_open_split = '<C-k>'
-"let g:FuzzyFinderOptions.Base.key_open_vsplit = '<C-l>'
-"let g:FuzzyFinderOptions.Base.key_open_tab = '<C-t>'
-"let g:FuzzyFinderOptions.File.excluded_path = 'bin\~$|obj\~$|\.exe$|\.dll$|\.scc$|\.jpg$|\.gif$|\.png$'
-"let g:FuzzyFinderOptions.File.excluded_path    = '\v\.o$|\.exe$|\.bak$|\.swp$|\.dll$'
-
 noremap <silent><Leader>e :FufCoverageFile<CR>
 nnoremap <Leader>b :FufBuffer<CR>
 
@@ -271,16 +264,6 @@ xnoremap <Tab> >
 nnoremap <S-Tab> <<
 xnoremap <S-Tab> <
 
-"
-" Fall back to keyword-completion if there is no omni-completion. 
-" Bind to C-Space. Courtesy of sontek:
-" http://blog.sontek.net/2008/06/12/vim-tip-use-ctrl-space-for-omni-and-keyword-completion/
-"
-inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
-      \ "\<lt>C-n>" :
-      \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
-      \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
-      \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
 
 "
 " tags
