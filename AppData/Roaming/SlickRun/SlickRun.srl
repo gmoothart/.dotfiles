@@ -230,6 +230,12 @@ GUID={0B7970F1-C660-4BD1-BBF3-5AE4F072E3CC}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[keypass]
+Filename="C:\Dropbox\kp\KeePass.exe"
+GUID={B1C2D71B-6CA4-4117-BFF8-DD497E603E96}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=-1
 [linqpad]
 Filename="C:\Program Files (x86)\LINQPad4\LINQPad.exe"
 GUID={B5EAE591-0708-429D-A4C9-DFD020AA7050}

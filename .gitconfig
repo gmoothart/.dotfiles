@@ -48,3 +48,5 @@
 	main-window-view = HistoryView
 [merge]
 	tool = kdiff3
+[push]
+	default = simple
