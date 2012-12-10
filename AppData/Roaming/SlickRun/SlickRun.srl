@@ -181,6 +181,13 @@ GUID={5CD45EA2-DD0B-4BB3-9C1E-0EDEFAF198AA}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[hipchat]
+Filename=""C:\Program Files (x86)\Google\Chrome\Application\chrome.exe""
+Params="--app=https://sendgrid.hipchat.com/chat"
+GUID={0F456A3C-A4AD-4827-A646-B9D8795C1310}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=0
 [hosts]
 Filename="gvim"
 Params="C:\Windows\System32\drivers\etc\hosts"
@@ -367,6 +374,12 @@ Disable32BitRedir=0
 Filename="C:\Program Files\PLT\DrScheme.exe"
 GUID={0FC33A7D-F852-451A-834C-2E87802B7F9E}
 StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[sendmail]
+Filename="https://mail.google.com/mail/?view=cm"
+GUID={B307962D-788E-40D3-9AA1-C70DA32C7160}
+StartMode=1
 UseRunAs=0
 Disable32BitRedir=0
 [services]
