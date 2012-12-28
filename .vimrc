@@ -112,7 +112,7 @@ set foldmethod=syntax
 set nofoldenable
 set nowrap
 
-set colorcolumn=120
+set colorcolumn=80
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 
@@ -206,6 +206,7 @@ noremap <Leader>r :!rake
 
 noremap <silent><Leader>e :FufCoverageFile<CR>
 nnoremap <Leader>b :FufBuffer<CR>
+let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|pyc|pyo)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|venv[/\\]'
 
 
 " need to set up snippent mappings manually for some reason

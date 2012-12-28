@@ -262,6 +262,12 @@ GUID={BB932194-0D67-4CF7-BFCF-079ED449281E}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[mailto]
+Filename="https://mail.google.com/mail/?view=cm"
+GUID={B307962D-788E-40D3-9AA1-C70DA32C7160}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=0
 [meebo]
 Filename="%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe"
 Params="--app=https://www.meebo.com/"
@@ -374,12 +380,6 @@ Disable32BitRedir=0
 Filename="C:\Program Files\PLT\DrScheme.exe"
 GUID={0FC33A7D-F852-451A-834C-2E87802B7F9E}
 StartMode=5
-UseRunAs=0
-Disable32BitRedir=0
-[sendmail]
-Filename="https://mail.google.com/mail/?view=cm"
-GUID={B307962D-788E-40D3-9AA1-C70DA32C7160}
-StartMode=1
 UseRunAs=0
 Disable32BitRedir=0
 [services]
@@ -576,7 +576,8 @@ StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
 [windowpad]
-Filename="C:\utils\WindowPad\WindowPad.exe"
+Filename="C:\Program Files\AutoHotkey\AutoHotkey.exe"
+Params="%USERPROFILE%\keyboard\WindowPadX.ahk"
 GUID={A73595C3-4D01-469B-8DE5-EF559A22B0FB}
 StartMode=5
 UseRunAs=0
