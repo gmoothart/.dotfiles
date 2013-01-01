@@ -16,8 +16,8 @@
   sbr = svn branch
   ffm = merge --ff-only
   lg = log --graph --date-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
-  tfsci = tfs checkintool --build-default-comment
   difp = diff --patience
+  difin = diff --cached
   oops = commit -a --amend
   unstage = reset HEAD
 [color]
