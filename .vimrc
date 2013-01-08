@@ -162,9 +162,6 @@ noremap <C-w>k <C-w>j
 "nnoremap <F2> :NERDTreeToggle<CR>
 "inoremap <F2> <esc>:NERDTreeToggle<CR>
 
-nnoremap <F3> :TlistToggle<CR>
-inoremap <F3> <esc>:TlistToggle<CR>
-
 " use bclose plugin to close a buffer but not its window
 nnoremap <F4> :Kwbd<CR>
 inoremap <F4> <esc>:Kwbd<CR>
@@ -175,7 +172,6 @@ inoremap <F5> <esc>:bp<CR>
 
 nnoremap <F6> :bn<CR>
 inoremap <F6> <esc>:bn<CR>
-
 
 nnoremap <F7> :cp<CR>
 inoremap <F7> <esc>:cp<CR>

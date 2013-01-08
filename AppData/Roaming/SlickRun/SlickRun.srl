@@ -651,6 +651,12 @@ GUID={02E05B79-85FA-4C00-85BA-329F0E37B63F}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[ynab]
+Filename="C:\Program Files (x86)\YNAB 4\YNAB 4.exe"
+GUID={500F4731-27F5-4136-81F2-626FB2BD2C5C}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=0
 [zip]
 Filename="C:\Program Files\7-Zip\7zFM.exe"
 GUID={FF37165E-540E-446C-BB91-53DFCB046831}
