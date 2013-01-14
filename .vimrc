@@ -73,7 +73,7 @@ if has('win32')
 elseif has('unix')
   set dir=/tmp
   set backupdir=/tmp
-  set guifont=Inconsolata\ 13
+  set guifont=Inconsolata\ 20
 elseif has('mac')
   set guifont=Monaco:h15
 endif
@@ -220,7 +220,7 @@ command! Edsnip :execute ":split " . snippets_dir . &ft . ".snippets"
 set virtualedit=block
 set backspace=indent,eol,start
 set nobackup
-set guioptions-=T
+set guioptions-=Tm
 set guioptions+=b
 set showmatch
 set ruler
