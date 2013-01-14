@@ -73,7 +73,7 @@ if has('win32')
 elseif has('unix')
   set dir=/tmp
   set backupdir=/tmp
-  set guifont=Inconsolata\ 13
+  set guifont=Inconsolata\ 20
 elseif has('mac')
   set guifont=Monaco:h15
 endif
@@ -112,7 +112,7 @@ set foldmethod=syntax
 set nofoldenable
 set nowrap
 
-set colorcolumn=80
+set colorcolumn=120
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 
@@ -162,6 +162,9 @@ noremap <C-w>k <C-w>j
 "nnoremap <F2> :NERDTreeToggle<CR>
 "inoremap <F2> <esc>:NERDTreeToggle<CR>
 
+nnoremap <F3> :TlistToggle<CR>
+inoremap <F3> <esc>:TlistToggle<CR>
+
 " use bclose plugin to close a buffer but not its window
 nnoremap <F4> :Kwbd<CR>
 inoremap <F4> <esc>:Kwbd<CR>
@@ -172,6 +175,7 @@ inoremap <F5> <esc>:bp<CR>
 
 nnoremap <F6> :bn<CR>
 inoremap <F6> <esc>:bn<CR>
+
 
 nnoremap <F7> :cp<CR>
 inoremap <F7> <esc>:cp<CR>
@@ -202,7 +206,6 @@ noremap <Leader>r :!rake
 
 noremap <silent><Leader>e :FufCoverageFile<CR>
 nnoremap <Leader>b :FufBuffer<CR>
-let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|pyc|pyo)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|venv[/\\]'
 
 
 " need to set up snippent mappings manually for some reason
@@ -217,7 +220,7 @@ command! Edsnip :execute ":split " . snippets_dir . &ft . ".snippets"
 set virtualedit=block
 set backspace=indent,eol,start
 set nobackup
-set guioptions-=T
+set guioptions-=Tm
 set guioptions+=b
 set showmatch
 set ruler
