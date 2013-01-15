@@ -149,10 +149,10 @@ noremap <C-w>h <C-w>k
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
 
-"map <C-w>h <C-k>
-"map <C-w>j <C-h>
-"map <C-w>k <C-j>
-"map <C-w>l <C-l>
+"noremap <C-w>h <C-K>
+"noremap <C-w>j <C-H>
+"noremap <C-w>k <C-J>
+"noremap <C-w>l <C-L>
 
 
 "
@@ -220,7 +220,8 @@ command! Edsnip :execute ":split " . snippets_dir . &ft . ".snippets"
 set virtualedit=block
 set backspace=indent,eol,start
 set nobackup
-set guioptions-=Tm
+set guioptions-=T
+set guioptions-=m
 set guioptions+=b
 set showmatch
 set ruler
