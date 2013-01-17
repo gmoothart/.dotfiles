@@ -26,7 +26,7 @@ if has('mouse')
 endif
 
 "settings specific for terminals.
-if $TERM==#"xterm" || $TERM==#"linux" || $TERM==#"cygwin"
+if !has('gui') && ($TERM==#"xterm" || $TERM==#"linux" || $TERM==#"cygwin")
   " Mouse support in xterm does not work beyond 95 or so columns, very confusing
   " http://stackoverflow.com/questions/7000960/vim-mouse-problem
   set mouse=""
