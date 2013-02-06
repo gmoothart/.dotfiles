@@ -10,6 +10,7 @@ ZSH_THEME="afowler"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias venv="source .venv/bin/activate"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -32,6 +33,8 @@ ZSH_THEME="afowler"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+unsetopt correct_all
 
 # Customize to your needs...
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games

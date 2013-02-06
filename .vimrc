@@ -170,11 +170,14 @@ nnoremap <F4> :Kwbd<CR>
 inoremap <F4> <esc>:Kwbd<CR>
 
 "iterate over open buffers
-nnoremap <F5> :bp<CR>
-inoremap <F5> <esc>:bp<CR>
+"nnoremap <F5> :bp<CR>
+"inoremap <F5> <esc>:bp<CR>
+"
+"nnoremap <F6> :bn<CR>
+"inoremap <F6> <esc>:bn<CR>
 
-nnoremap <F6> :bn<CR>
-inoremap <F6> <esc>:bn<CR>
+nnoremap <F5> :SyntasticToggle<CR>
+inoremap <F5> <esc>:SyntasticToggle<CR>
 
 
 nnoremap <F7> :cp<CR>
@@ -206,13 +209,17 @@ noremap <Leader>r :!rake
 
 noremap <silent><Leader>e :FufCoverageFile<CR>
 nnoremap <Leader>b :FufBuffer<CR>
-
+let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|pyc|pyo)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|venv[/\\]'
 
 " need to set up snippent mappings manually for some reason
 source ~/.vim/bundle/snipmate.vim/after/plugin/snipMate.vim
 
 command! Edsnip :execute ":split " . snippets_dir . &ft . ".snippets"
 
+
+let g:syntastic_mode_map = { 'mode': 'passive',
+                            \ 'active_filetypes': [],
+                            \ 'passive_filetypes': [] }
 
 "
 "Misc
