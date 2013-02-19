@@ -176,8 +176,8 @@ inoremap <F4> <esc>:Kwbd<CR>
 "nnoremap <F6> :bn<CR>
 "inoremap <F6> <esc>:bn<CR>
 
-nnoremap <F5> :SyntasticToggle<CR>
-inoremap <F5> <esc>:SyntasticToggle<CR>
+nnoremap <F6> :SyntasticToggle<CR>
+inoremap <F6> <esc>:SyntasticToggle<CR>
 
 
 nnoremap <F7> :cp<CR>
@@ -216,10 +216,6 @@ source ~/.vim/bundle/snipmate.vim/after/plugin/snipMate.vim
 
 command! Edsnip :execute ":split " . snippets_dir . &ft . ".snippets"
 
-
-let g:syntastic_mode_map = { 'mode': 'passive',
-                            \ 'active_filetypes': [],
-                            \ 'passive_filetypes': [] }
 
 "
 "Misc
