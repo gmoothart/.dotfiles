@@ -10,6 +10,12 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 call pathogen#infect()
 
+" make <esc> easier to hit
+inoremap <esc> <C-o>
+vnoremap <esc> <C-o>
+cnoremap <esc> <C-o>
+onoremap <esc> <C-o>
+
 "
 " Platform/environment issues
 "
