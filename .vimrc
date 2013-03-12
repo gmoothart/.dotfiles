@@ -176,8 +176,8 @@ inoremap <F4> <esc>:Kwbd<CR>
 "nnoremap <F6> :bn<CR>
 "inoremap <F6> <esc>:bn<CR>
 
-nnoremap <F6> :SyntasticToggle<CR>
-inoremap <F6> <esc>:SyntasticToggle<CR>
+nnoremap <F6> :SyntasticToggle<CR>:GitGutterToggle<CR>
+inoremap <F6> <esc>:SyntasticToggle<CR>:GitGutterToggle<CR>
 
 
 nnoremap <F7> :cp<CR>
