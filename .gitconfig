@@ -27,6 +27,7 @@
   status = auto
 [branch]
   autosetupmerge = true
+	autosetuprebase = always
 [github]
   user = gmoothart
 [merge]
