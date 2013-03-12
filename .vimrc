@@ -260,15 +260,6 @@ noremap Y y$
 nnoremap <CR> o<Esc>
 nnoremap <S-CR> O<Esc>
 
-" use tab to indent, in normal and visual mode.
-" xnoremap does not apply them to Select mode, which is desirable for interop
-" with snipMate
-nnoremap <Tab> >>
-xnoremap <Tab> >
-nnoremap <S-Tab> <<
-xnoremap <S-Tab> <
-
-
 "
 " tags
 "
