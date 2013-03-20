@@ -7,15 +7,13 @@ curl -L https://github.com/gmoothart.keys > ~/.ssh/authorized_keys2
 
 #
 # Default packages and sources
-apt-get update
-apt-get upgrade
+apt-get update -y
 apt-get install openssh-server ctags mercurial ack-grep curl zsh \
   git build-essential x11-xkb-utils openssl libreadline6 libreadline6-dev \
   zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev \
   libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion \
   pkg-config python-dev \
-  # fonts
-  msttcorefonts fonts-inconsolata ttf-droid ttf-ubuntu-font-family
+  msttcorefonts fonts-inconsolata ttf-droid ttf-ubuntu-font-family -y
 
 #
 #oh-my-zsh
