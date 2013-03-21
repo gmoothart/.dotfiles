@@ -31,7 +31,7 @@ git clone git@github.com:gmoothart/.dotfiles ~/.dotfiles
 
 #
 # vim from source
-apt-get build-dep vim
+apt-get build-dep vim -y
 hg clone https://vim.googlecode.com/hg/ vim-src
 cd vim-src
 ./configure --with-features=huge
