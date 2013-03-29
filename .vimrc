@@ -159,11 +159,12 @@ noremap <C-w>k <C-w>j
 " Function key remappings
 " These work in both normal and insert mode
 "
-"nnoremap <F2> :NERDTreeToggle<CR>
-"inoremap <F2> <esc>:NERDTreeToggle<CR>
+nnoremap <F2> :e .<CR>
+inoremap <F2> <esc>:e .<CR>
+let g:netrw_preview = 1 " `p` opens a vertica split
 
-nnoremap <F3> :TlistToggle<CR>
-inoremap <F3> <esc>:TlistToggle<CR>
+"nnoremap <F3> :TlistToggle<CR>
+"inoremap <F3> <esc>:TlistToggle<CR>
 
 " use bclose plugin to close a buffer but not its window
 nnoremap <F4> :Kwbd<CR>
