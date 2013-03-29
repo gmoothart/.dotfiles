@@ -149,6 +149,10 @@ noremap <C-w>h <C-w>k
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
 
+noremap <C-w>H <C-w>K
+noremap <C-w>J <C-w>H
+noremap <C-w>K <C-w>J
+
 "noremap <C-w>h <C-K>
 "noremap <C-w>j <C-H>
 "noremap <C-w>k <C-J>
