@@ -73,7 +73,7 @@ if has('win32')
 elseif has('unix')
   set dir=/tmp
   set backupdir=/tmp
-  set guifont=Inconsolata\ 20
+  set guifont=Inconsolata\ 14
 elseif has('mac')
   set guifont=Monaco:h15
 endif
