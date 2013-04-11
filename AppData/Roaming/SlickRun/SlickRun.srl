@@ -599,13 +599,6 @@ GUID={F4EE3D0C-ABDA-44A1-962D-3E5F76ADC94F}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
-[xming]
-Filename=""C:\Program Files (x86)\Xming\Xming.exe""
-Params=":0 -clipboard -multiwindow -xkblayout colemak"
-GUID={0E65C86D-7475-4A08-A525-92CE79CFB2EF}
-StartMode=1
-UseRunAs=0
-Disable32BitRedir=0
 [xpathtester]
 Filename="C:\utils\SketchPath\SketchPath.application"
 GUID={BC23E4C7-8E19-4661-AC63-AC60405B48E4}
@@ -616,6 +609,13 @@ Disable32BitRedir=0
 Filename="C:\Program Files\zabkat\xplorer2\xplorer2_UC.exe"
 GUID={0DDDF5E6-66ED-489D-B103-B84B0A28753F}
 StartMode=5
+UseRunAs=0
+Disable32BitRedir=0
+[xwin]
+Filename="C:\cygwin\bin\XWin.exe"
+Params="-multiwindow -xkblayout colemak"
+GUID={0E65C86D-7475-4A08-A525-92CE79CFB2EF}
+StartMode=1
 UseRunAs=0
 Disable32BitRedir=0
 [ybook]
