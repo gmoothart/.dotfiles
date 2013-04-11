@@ -20,6 +20,8 @@
   difin = diff --cached
   oops = commit -a --amend
   unstage = reset HEAD
+  # delete all merged branches.
+  brd = !git branch --merged master | grep -v 'master$' | xargs git branch -d
 [color]
   branch = auto
   diff = auto

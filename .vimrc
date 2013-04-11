@@ -73,7 +73,7 @@ if has('win32')
 elseif has('unix')
   set dir=/tmp
   set backupdir=/tmp
-  set guifont=Inconsolata\ 20
+  set guifont=Inconsolata\ 14
 elseif has('mac')
   set guifont=Monaco:h15
 endif
@@ -148,6 +148,10 @@ noremap ; :
 noremap <C-w>h <C-w>k
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
+
+noremap <C-w>H <C-w>K
+noremap <C-w>J <C-w>H
+noremap <C-w>K <C-w>J
 
 "noremap <C-w>h <C-K>
 "noremap <C-w>j <C-H>
