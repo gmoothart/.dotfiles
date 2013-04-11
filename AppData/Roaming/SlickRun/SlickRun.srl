@@ -85,13 +85,6 @@ GUID={6AB736B7-AC79-472E-8842-D17B98050CBD}
 StartMode=1
 UseRunAs=0
 Disable32BitRedir=0
-[devim]
-Filename="C:\Program Files (x86)\PuTTY\plink.exe"
-Params="dev -X -A -l gabe gvim"
-GUID={700C0070-73F7-4F95-8F38-1C2971E90CC3}
-StartMode=1
-UseRunAs=0
-Disable32BitRedir=0
 [devterm]
 Filename="C:\Program Files (x86)\PuTTY\plink.exe"
 Params="dev -X -A -l gabe gnome-terminal"
