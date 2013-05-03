@@ -38,6 +38,22 @@ def _prepare_base():
         local("curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh")
     local("chsh $USER -s $(which zsh);")
 
+    # better than grep
+    local("sudo apt-get install ack-grep --yes")
+    local("mv /usr/bin/ack-grep /usr/bin/ack")
+
+    # (g)vim from source
+    local("sudo apt-get install mercurial --yes")
+    local("sudo apt-get install exuberant-ctags --yes")
+    #local("sudo apt-get install libgtk2.0-dev") # for gvim
+    with lcd("/tmp"):
+        local("sudo apt-get build-dep vim --yes")
+        local("hg clone https://vim.googlecode.com/hg/ vim-src")
+        with lcd("vim-src"):
+            local("configure --with-features=huge")
+            local("make")
+            local("make install")
+
     # for x11-forwarding
     _gui_setup()
 
