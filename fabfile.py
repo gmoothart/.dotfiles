@@ -3,11 +3,6 @@ from fabric.contrib.console import confirm
 from os import path
 
 
-# TODO:
-# latest git from PPA
-# vim/gvim from source
-
-
 # setup that is not ubuntu version-dependent
 def _prepare_base():
     # adding PPAs
@@ -19,6 +14,7 @@ def _prepare_base():
     local("sudo apt-get install zsh --yes")
     local("sudo apt-get install build-essential --yes")
     local("sudo apt-get install git --yes")
+    local("sudo apt-get install tig --yes")
 
     # dotfiles
     with lcd('~'):
@@ -26,7 +22,7 @@ def _prepare_base():
             local("rm -rf .dotfiles/")
 
         local("git clone git@github.com:gmoothart/.dotfiles")
-        local(".dotfiles/install.sh")
+        local(".dotfiles/symlink_dotfiles.sh")
 
     # key forwarding
     local("curl -L https://github.com/gmoothart.keys > ~/.ssh/authorized_keys2")
