@@ -40,7 +40,11 @@ def _prepare_base():
 
     # better than grep
     local("sudo apt-get install ack-grep --yes")
-    local("mv /usr/bin/ack-grep /usr/bin/ack")
+    local("sudo mv /usr/bin/ack-grep /usr/bin/ack")
+
+    # development
+    local("sudo apt-get install python-dev --yes")
+    local("pip install virtualenv")
 
     # (g)vim from source
     local("sudo apt-get install mercurial --yes")
