@@ -1,4 +1,4 @@
-from fabric.api import local, cd, run, prefix, settings, abort
+from fabric.api import local, lcd, prefix, settings, abort
 from fabric.contrib.console import confirm
 import os
 
@@ -8,6 +8,10 @@ def _prepare_base():
     local("sudo apt-get install curl")
     local("sudo apt-get install zsh")
     local("sudo apt-get install build-essential")
+
+    with lcd('~'):
+        local("git clone git@github.com:gmoothart/.dotfiles")
+        local(".dotfiles/install.sh")
 
 
 
