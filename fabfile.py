@@ -44,11 +44,13 @@ def _prepare_base():
 
 def _gui_setup():
     #perty fonts
-    local("sudo apt-get install fonts-inconsolata --yes")
-    local("sudo apt-get install ttf-droid")
-    local("sudo apt-get install ttf-ubuntu-font-family --yes")
+    with settings(warn_only=True):
+        local("sudo apt-get install fonts-inconsolata --yes")
+        local("sudo apt-get install ttf-inconsolata --yes")  # for 10.04
+        local("sudo apt-get install ttf-droid --yes")
+        local("sudo apt-get install ttf-ubuntu-font-family --yes")
 
-    local("sudo apt-get install gnome-terminal --yes --yes")
+    local("sudo apt-get install gnome-terminal --yes")
 
 
 # 10.04-specific setup
