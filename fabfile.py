@@ -10,9 +10,19 @@ from os import path
 
 # setup that is not ubuntu version-dependent
 def _prepare_base():
+    # adding PPAs
+    local("sudo apt-get install python-software-properties")  # in case add-apt-repository is not installed
+    local("sudo add-apt-repository ppa:git-core/ppa")  # recent git
+    local("sudo apt-get update")
+
     local("sudo apt-get install curl")
     local("sudo apt-get install zsh")
     local("sudo apt-get install build-essential")
+    local("sudo apt-get install git")
+
+# most recent git
+    local("sudo apt-get update")
+
 
     # dotfiles
     with lcd('~'):
