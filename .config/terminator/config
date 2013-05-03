@@ -1,0 +1,17 @@
+[global_config]
+  title_transmit_bg_color = "#754d37"
+[keybindings]
+[profiles]
+  [[default]]
+    scrollback_lines = 9999
+    font = Droid Sans Mono 10
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
