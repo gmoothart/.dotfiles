@@ -34,13 +34,13 @@ def _prepare_base():
     # Oh-my-zsh. Must ignore error and change shell manually on ubuntu
     with settings(warn_only=True):
         local("curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh")
-    local("chsh $USER -s $(which zsh);")
+    local("sudo chsh $USER -s $(which zsh);")
 
     # better than grep
     local("sudo apt-get install ack-grep --yes")
-    #if path.exists('/usr/bin/ack'):
-    #    local("sudo rm /usr/bin/ack")
-    #local("sudo mv /usr/bin/ack-grep /usr/bin/ack")
+    if path.exists('/usr/bin/ack'):
+        local("sudo rm /usr/bin/ack")
+    local("sudo cp /usr/bin/ack-grep /usr/bin/ack")
 
     # development
     local("sudo apt-get install python-dev --yes")
@@ -49,14 +49,18 @@ def _prepare_base():
     # (g)vim from source
     local("sudo apt-get install mercurial --yes")
     local("sudo apt-get install exuberant-ctags --yes")
+    local("sudo apt-get build-dep vim --yes")
     #local("sudo apt-get install libgtk2.0-dev") # for gvim
     with lcd("/tmp"):
-        local("sudo apt-get build-dep vim --yes")
-        local("hg clone https://vim.googlecode.com/hg/ vim-src")
+        if path.exists('/tmp/vim-src'):
+            local("cd vim-src && hg pull")
+        else:
+            local("hg clone https://vim.googlecode.com/hg/ vim-src")
+
         with lcd("vim-src"):
-            local("configure --with-features=huge")
+            local("./configure --with-features=huge")
             local("make")
-            local("make install")
+            local("sudo make install")
 
     # for x11-forwarding
     _gui_setup()
