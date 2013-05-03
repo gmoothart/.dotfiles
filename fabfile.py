@@ -50,7 +50,6 @@ def _prepare_base():
     local("sudo apt-get install mercurial --yes")
     local("sudo apt-get install exuberant-ctags --yes")
     local("sudo apt-get build-dep vim --yes")
-    #local("sudo apt-get install libgtk2.0-dev") # for gvim
     with lcd("/tmp"):
         if path.exists('/tmp/vim-src'):
             local("cd vim-src && hg pull")
@@ -74,12 +73,7 @@ def _gui_setup():
         local("sudo apt-get install ttf-droid --yes")
         local("sudo apt-get install ttf-ubuntu-font-family --yes")
 
-    local("sudo apt-get install gnome-terminal --yes")
-
-
-# 10.04-specific setup
-def prepare_dev_lucid():
-    _prepare_base()
+    local("sudo apt-get install terminator --yes")
 
 
 # Setup for current ubuntu (may not work on older versions)
