@@ -23,11 +23,9 @@ def _prepare_base():
     # dotfiles
     with lcd('~'):
         if path.exists(path.expanduser('~/.dotfiles')):
-            with lcd('.dotfiles'):
-                local("git pull")
-        else:
-            local("git clone git@github.com:gmoothart/.dotfiles")
+            local("rm -rf .dotfiles/")
 
+        local("git clone git@github.com:gmoothart/.dotfiles")
         local(".dotfiles/install.sh")
 
     # key forwarding
@@ -40,7 +38,9 @@ def _prepare_base():
 
     # better than grep
     local("sudo apt-get install ack-grep --yes")
-    local("sudo mv /usr/bin/ack-grep /usr/bin/ack")
+    #if path.exists('/usr/bin/ack'):
+    #    local("sudo rm /usr/bin/ack")
+    #local("sudo mv /usr/bin/ack-grep /usr/bin/ack")
 
     # development
     local("sudo apt-get install python-dev --yes")
