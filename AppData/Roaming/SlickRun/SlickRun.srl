@@ -46,6 +46,7 @@ UseRunAs=0
 Disable32BitRedir=0
 [chrome]
 Filename="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+Params="-allow-file-access-from-files"
 GUID={57AD7EEB-1916-41D5-9EB8-2D73B07142C2}
 StartMode=5
 UseRunAs=0
@@ -80,14 +81,14 @@ UseRunAs=0
 Disable32BitRedir=0
 [dev]
 Filename="C:\Dropbox\puttytray\puttytray.exe"
-Params="-file dev -A"
+Params="-file mp-dev -A"
 GUID={6AB736B7-AC79-472E-8842-D17B98050CBD}
 StartMode=1
 UseRunAs=0
 Disable32BitRedir=0
 [devterm]
 Filename="C:\Program Files (x86)\PuTTY\plink.exe"
-Params="dev -X -A -l gabe gnome-terminal"
+Params="127.0.0.1 -P 2222 -X -A -l vagrant terminator"
 GUID={1FB0AF11-0D2F-47EB-AFE2-4AC17C405E19}
 StartMode=1
 UseRunAs=0
