@@ -8,6 +8,7 @@ def _prepare_base():
     # adding PPAs
     local("sudo apt-get install python-software-properties --yes")  # in case add-apt-repository is not installed
     local("sudo add-apt-repository ppa:git-core/ppa")  # recent git
+    local("sudo add-apt-repository ppa:chris-lea/node.js")  # recent nodejs
     local("sudo apt-get update")
 
     local("sudo apt-get install curl --yes")
@@ -41,6 +42,8 @@ def _prepare_base():
     # development
     local("sudo apt-get install python-dev --yes")
     local("pip install virtualenv")
+    local('curl -L https://get.rvm.io | sudo bash -s stable --autolibs=enabled')
+    local("sudo apt-get install nodejs")
 
     # (g)vim from source
     local("sudo apt-get install mercurial --yes")
@@ -57,9 +60,6 @@ def _prepare_base():
             local("make")
             local("sudo make install")
 
-
-    # RVM
-    local('curl -L https://get.rvm.io | sudo bash -s stable --rails --autolibs=enabled')
 
     # for x11-forwarding
     _gui_setup()
