@@ -57,6 +57,10 @@ def _prepare_base():
             local("make")
             local("sudo make install")
 
+
+    # RVM
+    local('curl -L https://get.rvm.io | sudo bash -s stable --rails --autolibs=enabled')
+
     # for x11-forwarding
     _gui_setup()
 
