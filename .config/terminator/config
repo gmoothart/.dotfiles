@@ -6,6 +6,7 @@
     scrollback_lines = 9999
     font = Droid Sans Mono 12
     use_system_font = False
+    login_shell = True
 [layouts]
   [[default]]
     [[[child1]]]
