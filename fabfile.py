@@ -17,14 +17,6 @@ def _prepare_base():
     local("sudo apt-get install git --yes")
     local("sudo apt-get install tig --yes")
 
-    # dotfiles
-    with lcd('~'):
-        if path.exists(path.expanduser('~/.dotfiles')):
-            local("rm -rf .dotfiles/")
-
-        local("git clone git@github.com:gmoothart/.dotfiles")
-        local(".dotfiles/symlink_dotfiles.sh")
-
     # key forwarding
     local("curl -L https://github.com/gmoothart.keys > ~/.ssh/authorized_keys2")
 
@@ -32,6 +24,15 @@ def _prepare_base():
     with settings(warn_only=True):
         local("curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh")
     local("sudo chsh $USER -s $(which zsh);")
+
+    # dotfiles
+    # must be done after oh-my-zsh, so .zshrc isn't replaced by it
+    with lcd('~'):
+        if path.exists(path.expanduser('~/.dotfiles')):
+            local("rm -rf .dotfiles/")
+
+        local("git clone git@github.com:gmoothart/.dotfiles")
+        local(".dotfiles/symlink_dotfiles.sh")
 
     # better than grep
     local("sudo apt-get install ack-grep --yes")
