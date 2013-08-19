@@ -5,3 +5,5 @@ obj/
 *.tmp
 tags
 .vim/.netrwhist
+*.pyc
+*.log
