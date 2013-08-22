@@ -43,6 +43,7 @@ def _prepare_base():
     # development
     local("sudo apt-get install python-dev --yes")
     local("pip install virtualenv")
+    local("pip install flake8")  #mostly for vim/syntastic
     local('curl -L https://get.rvm.io | sudo bash -s stable --autolibs=enabled')
     local("sudo apt-get install nodejs")
 
