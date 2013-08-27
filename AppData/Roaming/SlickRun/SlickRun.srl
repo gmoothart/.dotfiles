@@ -123,6 +123,12 @@ GUID={2C7308FF-6D88-4F85-B05F-ED99078004D2}
 StartMode=1
 UseRunAs=0
 Disable32BitRedir=0
+[feeds]
+Filename="C:\Program Files (x86)\FeedDemon\FeedDemon.exe"
+GUID={F0FA0791-8646-4A3A-9F67-5CA44A74B33E}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=0
 [fiddler]
 Filename="C:\Program Files (x86)\Fiddler2\Fiddler.exe"
 GUID={6993EBB5-80A5-4312-A753-CE92CC1D0591}
