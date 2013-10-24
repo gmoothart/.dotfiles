@@ -38,6 +38,7 @@ unsetopt correct_all
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export EDITOR=/usr/local/bin/vim
 
 #get rid of funky ctrl-sequences like ctrl-s
 stty ixany
