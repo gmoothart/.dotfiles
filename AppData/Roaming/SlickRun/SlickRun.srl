@@ -569,6 +569,13 @@ GUID={356BBDF6-0D10-44CA-BEB0-7523899E3C96}
 StartMode=5
 UseRunAs=0
 Disable32BitRedir=0
+[webterm]
+Filename="C:\Program Files (x86)\PuTTY\plink.exe"
+Params="127.0.0.1 -P 2223 -X -A -l vagrant terminator"
+GUID={EF29309E-1E6D-4495-9792-2E386BCD4879}
+StartMode=1
+UseRunAs=0
+Disable32BitRedir=0
 [wgrep]
 Filename="C:\gabe\settings\grep\wgrep.exe"
 GUID={1771506A-2967-4950-BC74-D52055105F6D}
