@@ -70,12 +70,12 @@ set fileformats=unix,dos,mac
 if has('win32')
   set dir=$temp
   set guifont=Consolas:h11
+elseif has('mac')
+  set guifont=Monaco:h15
 elseif has('unix')
   set dir=/tmp
   set backupdir=/tmp
   set guifont=Inconsolata\ 14
-elseif has('mac')
-  set guifont=Monaco:h15
 endif
 
 set noswapfile
