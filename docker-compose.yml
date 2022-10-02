@@ -1,0 +1,40 @@
+version: "2.1"
+services:
+  unifi-controller: #https://hub.docker.com/r/linuxserver/unifi-controller
+    image: lscr.io/linuxserver/unifi-controller:latest
+    container_name: unifi-controller
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MEM_LIMIT=1024
+      - MEM_STARTUP=1024
+    volumes:
+      - /opt/appdata/unify_config:/config
+    ports:
+      - 8443:8443
+      - 3478:3478/udp
+      - 10001:10001/udp
+      - 8080:8080
+      - 1900:1900/udp
+      - 8843:8843
+      - 8880:8880
+      - 6789:6789
+      - 5514:5514/udp
+    restart: unless-stopped
+    network_mode: "host"
+  minecraft-bedrock-server: #https://hub.docker.com/r/itzg/minecraft-bedrock-server
+    image: itzg/minecraft-bedrock-server
+    container-name: minecraft-bedrock-server
+    environment:
+      - EULA=TRUE
+      - VERSION=LATEST # auto-upgrade on container start (?)
+      - UID=1000
+      - GID=1000
+      - GAMEMODE=survival
+      - DIFFICULTY=normal
+    volumes:
+      - /opt/appdata/minecraft_bedrock_data:/data
+    ports:
+      19132:19132/udp
+    restart: unless-stopped
+    network_mode: "host"
