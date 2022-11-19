@@ -51,6 +51,14 @@ services:
     network_mode: "host"
     stdin_open: true
     tty: true
+  iperf3-server: #https://registry.hub.docker.com/r/networkstatic/iperf3
+    image: networkstatic/iperf3
+    container_name: iperf3-server
+    command: --server
+    ports:
+      - 5201:5201
+    restart: unless-stopped
+    network_mode: "host"
 volumes:
   bedrock: {}
 
