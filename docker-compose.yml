@@ -8,8 +8,8 @@ services:
       - PGID=1000
       - MEM_LIMIT=1024
       - MEM_STARTUP=1024
-    volumes: #TODO: use a volume instead of mount next time
-      - /opt/appdata/unify_config:/config
+    volumes:
+      - unify:/config
     ports:
       - 8443:8443
       - 3478:3478/udp
@@ -22,20 +22,20 @@ services:
       - 5514:5514/udp
     restart: unless-stopped
     network_mode: "host"
-  plex: #https://hub.docker.com/r/linuxserver/plex
-    image: lscr.io/linuxserver/plex:latest
-    container_name: plex
-    network_mode: host
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - VERSION=docker
-    volumes:
-      - /home/minecraft/plex/config:/config
-      - /home/minecraft/plex/tv:/tv
-      - /home/minecraft/plex/movies:/movies
-      - /home/minecraft/plex/music:/music
-    restart: unless-stopped
+  #plex: #https://hub.docker.com/r/linuxserver/plex
+  #  image: lscr.io/linuxserver/plex:latest
+  #  container_name: plex
+  #  network_mode: host
+  #  environment:
+  #    - PUID=1000
+  #    - PGID=1000
+  #    - VERSION=docker
+  #  volumes:
+  #    - /home/minecraft/plex/config:/config
+  #    - /home/minecraft/plex/tv:/tv
+  #    - /home/minecraft/plex/movies:/movies
+  #    - /home/minecraft/plex/music:/music
+  #  restart: unless-stopped
   minecraft-bedrock-server: #https://hub.docker.com/r/itzg/minecraft-bedrock-server
     image: itzg/minecraft-bedrock-server
     container_name: minecraft-bedrock-server
@@ -61,4 +61,5 @@ services:
     network_mode: "host"
 volumes:
   bedrock: {}
+  unify: {}
 

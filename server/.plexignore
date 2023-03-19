@@ -1,0 +1,2 @@
+# ignore audiobooks so we can add it as a separate library
+Audiobooks/*
