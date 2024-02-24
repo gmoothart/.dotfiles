@@ -1,11 +1,14 @@
 version: "3.8"
 services:
+  # TODO: dns updater, minecraft java
   unifi-controller: #https://hub.docker.com/r/linuxserver/unifi-controller
     image: lscr.io/linuxserver/unifi-controller:latest
+    profiles: [net]
     container_name: unifi-controller
     environment:
       - PUID=1000
       - PGID=1000
+      - TZ=Etc/UTC
       - MEM_LIMIT=1024
       - MEM_STARTUP=1024
     volumes:
@@ -21,7 +24,6 @@ services:
       - 6789:6789
       - 5514:5514/udp
     restart: unless-stopped
-    network_mode: "host"
   #plex: #https://hub.docker.com/r/linuxserver/plex
   #  image: lscr.io/linuxserver/plex:latest
   #  container_name: plex
@@ -36,8 +38,12 @@ services:
   #    - /home/minecraft/plex/movies:/movies
   #    - /home/minecraft/plex/music:/music
   #  restart: unless-stopped
+  #  TODO: how is this not in the compise file already ???
+  #minecraft-java-server:
+
   minecraft-bedrock-server: #https://hub.docker.com/r/itzg/minecraft-bedrock-server
     image: itzg/minecraft-bedrock-server
+    profiles: [srv]
     container_name: minecraft-bedrock-server
     environment:
       - EULA=TRUE
@@ -48,17 +54,16 @@ services:
     ports:
       - 19132:19132/udp
     restart: unless-stopped
-    network_mode: "host"
     stdin_open: true
     tty: true
   iperf3-server: #https://registry.hub.docker.com/r/networkstatic/iperf3
     image: networkstatic/iperf3
+    profiles: [net, srv]
     container_name: iperf3-server
     command: --server
     ports:
       - 5201:5201
     restart: unless-stopped
-    network_mode: "host"
 volumes:
   bedrock: {}
   unify: {}
