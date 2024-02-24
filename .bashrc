@@ -79,7 +79,7 @@ fi
 
 # some more ls aliases
 #alias ll='ls -l'
-#alias la='ls -A'
+alias la='ls -al'
 #alias l='ls -CF'
 
 # Alias definitions.
@@ -97,5 +97,3 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
