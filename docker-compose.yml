@@ -1,70 +1,25 @@
-version: "3.8"
 services:
-  # TODO: dns updater, minecraft java
-  unifi-controller: #https://hub.docker.com/r/linuxserver/unifi-controller
-    image: lscr.io/linuxserver/unifi-controller:latest
-    profiles: [net]
-    container_name: unifi-controller
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-      - MEM_LIMIT=1024
-      - MEM_STARTUP=1024
-    volumes:
-      - unify:/config
-    ports:
-      - 8443:8443
-      - 3478:3478/udp
-      - 10001:10001/udp
-      - 8080:8080
-      - 1900:1900/udp
-      - 8843:8843
-      - 8880:8880
-      - 6789:6789
-      - 5514:5514/udp
+  # TODO: dns updater
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
     restart: unless-stopped
-  #plex: #https://hub.docker.com/r/linuxserver/plex
-  #  image: lscr.io/linuxserver/plex:latest
-  #  container_name: plex
-  #  network_mode: host
-  #  environment:
-  #    - PUID=1000
-  #    - PGID=1000
-  #    - VERSION=docker
-  #  volumes:
-  #    - /home/minecraft/plex/config:/config
-  #    - /home/minecraft/plex/tv:/tv
-  #    - /home/minecraft/plex/movies:/movies
-  #    - /home/minecraft/plex/music:/music
-  #  restart: unless-stopped
-  #  TODO: how is this not in the compise file already ???
-  #minecraft-java-server:
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
 
-  minecraft-bedrock-server: #https://hub.docker.com/r/itzg/minecraft-bedrock-server
-    image: itzg/minecraft-bedrock-server
-    profiles: [srv]
-    container_name: minecraft-bedrock-server
     environment:
-      - EULA=TRUE
-      - GAMEMODE=survival
-      - DIFFICULTY=normal
+      DISABLE_IPV6: 'true'
+
     volumes:
-      - bedrock:/data
-    ports:
-      - 19132:19132/udp
-    restart: unless-stopped
-    stdin_open: true
-    tty: true
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
   iperf3-server: #https://registry.hub.docker.com/r/networkstatic/iperf3
     image: networkstatic/iperf3
-    profiles: [net, srv]
     container_name: iperf3-server
     command: --server
     ports:
       - 5201:5201
     restart: unless-stopped
-volumes:
-  bedrock: {}
-  unify: {}
 
